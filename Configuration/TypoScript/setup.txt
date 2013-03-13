@@ -1,0 +1,79 @@
+
+[globalVar = LIT:1 = {$plugin.tx_wsflexslider.includejquerycore}]
+page.includeJSFooterlibs {
+	jquery = http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+	jquery.external = 1
+	jquery.forceOnTop = 1
+}
+[global]
+
+page.includeJSFooter {
+	flexslider = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider.js
+	flexslider_textmode = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider.textmode.js
+}
+
+page.includeCSS {
+	flexslider = EXT:ws_flexslider/Resources/Public/Css/flexslider.css
+}
+
+
+plugin.tx_wsflexslider {
+
+	settings {
+	
+		maxwidth = {$plugin.tx_wsflexslider.maxwidth}
+		maxheight = {$plugin.tx_wsflexslider.maxheight}
+		animation = {$plugin.tx_wsflexslider.animation}
+		easing = {$plugin.tx_wsflexslider.easing}
+		direction = {$plugin.tx_wsflexslider.direction}
+		reverse = {$plugin.tx_wsflexslider.reverse}
+		animationLoop = {$plugin.tx_wsflexslider.animationLoop}
+		smoothHeight = {$plugin.tx_wsflexslider.smoothHeight}
+		startAt = {$plugin.tx_wsflexslider.startAt}
+		slideshow = {$plugin.tx_wsflexslider.slideshow}
+		slideshowSpeed = {$plugin.tx_wsflexslider.slideshowSpeed}
+		animationSpeed = {$plugin.tx_wsflexslider.animationSpeed}
+		initDelay = {$plugin.tx_wsflexslider.initDelay}
+		randomize = {$plugin.tx_wsflexslider.randomize}
+		pauseOnAction = {$plugin.tx_wsflexslider.pauseOnAction}
+		pauseOnHover = {$plugin.tx_wsflexslider.pauseOnHover}
+		useCSS = {$plugin.tx_wsflexslider.useCSS}
+		touch = {$plugin.tx_wsflexslider.touch}
+		video = {$plugin.tx_wsflexslider.video}
+		controlNav = {$plugin.tx_wsflexslider.controlNav}
+		directionNav = {$plugin.tx_wsflexslider.directionNav}
+		keyboard = {$plugin.tx_wsflexslider.keyboard}
+		multipleKeyboard = {$plugin.tx_wsflexslider.multipleKeyboard}
+		mousewheel = {$plugin.tx_wsflexslider.mousewheel}
+		pausePlay = {$plugin.tx_wsflexslider.pausePlay}
+		
+		controlsContainer = {$plugin.tx_wsflexslider.controlsContainer}
+		manualControls = {$plugin.tx_wsflexslider.manualControls}
+		sync = {$plugin.tx_wsflexslider.sync}
+		asNavFor = {$plugin.tx_wsflexslider.asNavFor}
+		itemWidth = {$plugin.tx_wsflexslider.itemWidth}
+		itemMargin = {$plugin.tx_wsflexslider.itemMargin}
+		minItems = {$plugin.tx_wsflexslider.minItems}
+		maxItems = {$plugin.tx_wsflexslider.maxItems}
+		move = {$plugin.tx_wsflexslider.move}
+		
+		carousel = {$plugin.tx_wsflexslider.carousel}
+		
+		textmode = 0
+	}
+	
+
+	view {
+		templateRootPath = {$plugin.tx_wsflexslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_wsflexslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_wsflexslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_wsflexslider.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+

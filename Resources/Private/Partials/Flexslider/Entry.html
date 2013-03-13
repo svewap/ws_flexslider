@@ -1,0 +1,25 @@
+{namespace fs=Tx_WsFlexslider_ViewHelpers}
+
+
+<li>
+	<div class="slidercontent wsflexslider-{image.styleclass}">
+		<f:if condition="{image.image}">
+			<f:image src="uploads/tx_wsflexslider/{image.image}" width="{settings.maxwidth}" height="{settings.maxheight}" alt="{image.title}" />
+		</f:if>
+		<div class="caption">
+			<div class="captionwrapper wsflexslider-align{image.textposition}">
+				<p class="captiontitle">{image.title}</p>
+				<f:if condition="{image.description}">
+				<div class="captiontext"><f:format.html>{image.description}</f:format.html></div>
+				</f:if>
+			</div>
+			<f:if condition="{image.link}">
+				<div class="captionlink">
+				<fs:DynLink arguments="{link: image.link}">
+					<f:translate key="more">More</f:translate>
+				</fs:DynLink>
+				</div>
+			</f:if>
+		</div>
+	</div>
+</li>
