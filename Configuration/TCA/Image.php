@@ -9,7 +9,7 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, image',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, description, textposition, styleclass, link, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'hidden;;1, title, description, textposition, styleclass, link, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -177,17 +177,6 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 				'config' => Array(
 						'type' => 'select',
 						'foreign_table' => 'tt_content',
-						//'foreign_table_where' => ...,
-						'size' => 1,
-						'minitems' => 0,
-						'maxitems' => 1,
-				),
-		),
-		'flexslider_uid' => Array(
-				'label' => 'Vid',
-				'config' => Array(
-						'type' => 'select',
-						'foreign_table' => 'tx_wsflexslider_domain_model_flexslider',
 						//'foreign_table_where' => ...,
 						'size' => 1,
 						'minitems' => 0,

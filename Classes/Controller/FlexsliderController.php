@@ -38,7 +38,6 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 	
 	public function initializeAction() {
 	
-		$this->flexsliderRepository = t3lib_div::makeInstance('Tx_WsFlexslider_Domain_Repository_FlexsliderRepository');
 		$this->imageRepository = t3lib_div::makeInstance('Tx_WsFlexslider_Domain_Repository_ImageRepository');
 		$this->configuration = $this->settings['flexslider'];
 		
@@ -138,7 +137,7 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 		$contentObject = $this->configurationManager->getContentObject();
 		$contentElement = $contentObject->data;
 		
-		$this->view->assign('uid', $contentElement['uid']);
+		$this->view->assign('uid', isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid']);
 		$this->view->assign('settings', $this->settings);
 		$this->view->assign('labels', $this->labels);
 		$this->view->assign('images', $this->getCurrentImages());
@@ -150,9 +149,10 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 		$contentElement = $contentObject->data;
 		
 		$images = array();
+		$uid = isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid'];
 	
-		if (isset($contentElement['uid'])) { // Content Element
-			$images = $this->imageRepository->findByUids($this->getImageIdsByContentUid($contentElement['uid']));
+		if (isset($uid)) { // Content Element
+			$images = $this->imageRepository->findByUids($this->getImageIdsByContentUid($uid));
 		} else if (isset($contentElement[0]) && !is_array(isset($contentElement[0]))) { // Fluid cObject data
 			$images = $this->imageRepository->findByUids(t3lib_div::trimExplode(',', $contentElement[0], true));
 		} else if (trim($this->configuration['images']) != '') { // TypoScript

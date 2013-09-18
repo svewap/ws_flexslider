@@ -9,7 +9,6 @@ CREATE TABLE tx_wsflexslider_domain_model_image (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	content_uid int(11) DEFAULT '0' NOT NULL,
-	flexslider_uid int(11) DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
 	description text NOT NULL,

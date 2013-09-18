@@ -57,14 +57,12 @@ $tempColumns = array(
 						'foreign_field' => 'content_uid',
 						'foreign_label' => 'title',
 						'foreign_sortby' => 'sorting',
-						'foreign_selector' => 'flexslider',
-						'foreign_unique' => 'flexslider',
 						'maxitems' => '100',
 						'appearance' => array(
 								#'collapseAll' => 0, // Auskommentieren, da es sonst immer als true interpretiert wird
 								'expandSingle' => true,
 								'newRecordLinkAddTitle' => 1,
-								'newRecordLinkPosition' => “both”,
+								'newRecordLinkPosition' => "both",
 								'useCombination' => 1,
 						),
 				)
