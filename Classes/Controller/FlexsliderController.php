@@ -4,7 +4,7 @@
  *  Copyright notice
  *
  *  (c) 2012 Sven Wappler <typo3YYYY@wapplersystems.de>, WapplerSystems
- *  
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -32,26 +32,26 @@
  *
  */
 class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Controller_ActionController {
-	
 
 
-	
+
+
 	public function initializeAction() {
-	
-		$this->imageRepository = t3lib_div::makeInstance('Tx_WsFlexslider_Domain_Repository_ImageRepository');
+
+		$this->imageRepository =  $this->objectManager->get('Tx_WsFlexslider_Domain_Repository_ImageRepository');
 		$this->configuration = $this->settings['flexslider'];
-		
-		
-		$FeConfigManager = t3lib_div::makeInstance('Tx_Extbase_Configuration_FrontendConfigurationManager');
+
+
+		$FeConfigManager =  $this->objectManager->get('Tx_Extbase_Configuration_FrontendConfigurationManager');
 		$ts = $FeConfigManager->getTypoScriptSetup();
-		
+
 		// Check Static include
 		if (!@strlen($ts['plugin.']['tx_wsflexslider.']['view.']['templateRootPath'])) {
 			$this->flashMessageContainer->add('You have to include the static extension Template of the Flexslider.');
 		}
-		
+
 		// Settings
-		
+
 		if (isset($this->settings['ff']['maxwidth']) && strlen($this->settings['ff']['maxwidth']) > 0)
 			$this->settings['maxwidth'] = $this->settings['ff']['maxwidth'];
 		if (isset($this->settings['ff']['maxheight']) && strlen($this->settings['ff']['maxheight']) > 0)
@@ -110,7 +110,7 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 			$this->settings['sync'] = $this->settings['ff']['sync'];
 		if (isset($this->settings['ff']['asNavFor']) && strlen($this->settings['ff']['asNavFor']) > 0)
 			$this->settings['asNavFor'] = $this->settings['ff']['asNavFor'];
-		
+
 		if (isset($this->settings['ff']['itemWidth']) && intval($this->settings['ff']['itemWidth']) > 0)
 			$this->settings['itemWidth'] = $this->settings['ff']['itemWidth'];
 		if (isset($this->settings['ff']['itemMargin']) && intval($this->settings['ff']['itemMargin']) > 0)
@@ -121,36 +121,36 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 			$this->settings['maxItems'] = $this->settings['ff']['maxItems'];
 		if (isset($this->settings['ff']['move']) && intval($this->settings['ff']['move']) > 0)
 			$this->settings['move'] = $this->settings['ff']['move'];
-		
+
 		if (isset($this->settings['ff']['textmode']) && $this->settings['ff']['textmode'] != 'ts')
 			$this->settings['textmode'] = $this->settings['ff']['textmode'];
-		
+
 	}
-	
+
 	/**
 	 * action list
 	 *
 	 * @return void
 	 */
 	public function listAction() {
-		
+
 		$contentObject = $this->configurationManager->getContentObject();
 		$contentElement = $contentObject->data;
-		
+
 		$this->view->assign('uid', isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid']);
 		$this->view->assign('settings', $this->settings);
 		$this->view->assign('labels', $this->labels);
 		$this->view->assign('images', $this->getCurrentImages());
 	}
-	
-	
+
+
 	protected function getCurrentImages() {
 		$contentObject = $this->configurationManager->getContentObject();
 		$contentElement = $contentObject->data;
-		
+
 		$images = array();
 		$uid = isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid'];
-	
+
 		if (isset($uid)) { // Content Element
 			$images = $this->imageRepository->findByUids($this->getImageIdsByContentUid($uid));
 		} else if (isset($contentElement[0]) && !is_array(isset($contentElement[0]))) { // Fluid cObject data
@@ -158,10 +158,10 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 		} else if (trim($this->configuration['images']) != '') { // TypoScript
 			$images = $this->imageRepository->findByUids(t3lib_div::trimExplode(',', $this->configuration['images'], true));
 		}
-		
+
 		return $images;
 	}
-	
+
 	/**
 	 *
 	 * @param integer $uid
