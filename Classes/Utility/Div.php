@@ -72,7 +72,7 @@ class Tx_WsFlexslider_Utility_Div
 
 			}
 		}
-		
+
 		$z = array_combine($a, $b);
 		if (!$z) return array();
 
@@ -147,7 +147,7 @@ class Tx_WsFlexslider_Utility_Div
 		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::siteRelPath('t3skin') . 'stylesheets/visual/element_message.css');
 		$GLOBALS['TSFE']->getPageRenderer()->addCssInlineBlock('flashmessage',$code);
 
-		$flashMessage = t3lib_div::makeInstance('t3lib_FlashMessage', $message, $title, $type);
+		$flashMessage =  $this->objectManager->get(t3lib_FlashMessage', $message, $title, $type);
 		return $flashMessage->render();
 	}
 

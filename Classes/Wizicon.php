@@ -28,7 +28,7 @@
  *
  * @author	Sven Wappler <typo3@wapplersystems.de>
  * @package	TYPO3
- * @subpackage 
+ * @subpackage
  */
 class Tx_WsFlexslider_Wizicon {
 
@@ -61,7 +61,7 @@ class Tx_WsFlexslider_Wizicon {
 	function includeLocalLang() {
 		$llFile = t3lib_extMgm::extPath('ws_flexslider') . '/Resources/Private/Language/locallang.xml';
 		if (class_exists('t3lib_l10n_parser_Llxml')) {
-			$xmlParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
+			$xmlParser =  $this->objectManager->get('t3lib_l10n_parser_Llxml');
 			$LOCAL_LANG = $xmlParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
 		} else {
 			$LOCAL_LANG = t3lib_div::readLLXMLfile($llFile, $GLOBALS['LANG']->lang);
