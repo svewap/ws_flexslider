@@ -55,13 +55,13 @@ class Tx_WsFlexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHe
 		$this->registerUniversalTagAttributes();
 		$this->registerArgument('arguments', 'array', 'Given arguments by Fluid call as an array.');
 		$this->registerArgument('href', 'string', 'Link href.');
-		
+
 	}
-	
+
 	public function initialize() {
 		parent::initialize();
 		$this->paramLabels = array('href', 'target', 'class', 'title');
-		
+
 	}
 
 	/**
@@ -95,7 +95,7 @@ class Tx_WsFlexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHe
 		$this->setArgumentsFromArray($paramDataArr);
 
 		if (isset($this->arguments['href']) && !empty($this->arguments['href'])) {
-			$cObj = t3lib_div::makeInstance('tslib_cObj');
+			$cObj = $this->objectManager->get('tslib_cObj');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
 				'returnLast' => true
