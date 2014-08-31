@@ -18,7 +18,6 @@
 
 			<label index="list_title">Flexslider</label>
 			<label index="list_plus_wiz_description">Add a jQuery Flexslider</label>
-			<label index="add_image">Add image</label>
 
 			<label index="ff.config">Configuration</label>
 			<label index="ff.maxwidth">Max width</label>
@@ -42,6 +41,7 @@
 			<label index="ff.animationSpeed">Animation speed (in milliseconds)</label>
 			<label index="ff.initDelay">Init delay in milliseconds</label>
 			<label index="ff.randomize">Random mode</label>
+			<label index="ff.textmode">Text mode</label>
 			<label index="ff.primarysettings">Primary Settings</label>
 
 			<!-- Usability Features -->
@@ -98,7 +98,6 @@
 
 			<label index="list_title">Flexslider</label>
 			<label index="list_plus_wiz_description">Fügt einen jQuery Flexslider hinzu</label>
-			<label index="add_image">Bild hinzufügen</label>
 
 			<label index="ff.config">Konfiguration</label>
 			<label index="ff.maxwidth">Maximale Breite</label>
@@ -122,6 +121,7 @@
 			<label index="ff.animationSpeed">Geschwindigkeit der Animation (in Millisekunden)</label>
 			<label index="ff.initDelay">Startverzögerung in Millisekunden</label>
 			<label index="ff.randomize">Zufallsmodus</label>
+			<label index="ff.textmode">Textmodus</label>
 			<label index="ff.primarysettings">Primäreinstellungen</label>
 
 			<!-- Usability Features -->
