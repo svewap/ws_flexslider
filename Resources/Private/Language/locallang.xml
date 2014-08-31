@@ -18,6 +18,7 @@
 
 			<label index="list_title">Flexslider</label>
 			<label index="list_plus_wiz_description">Add a jQuery Flexslider</label>
+			<label index="add_image">Add image</label>
 
 			<label index="ff.config">Configuration</label>
 			<label index="ff.maxwidth">Max width</label>
@@ -98,6 +99,7 @@
 
 			<label index="list_title">Flexslider</label>
 			<label index="list_plus_wiz_description">Fügt einen jQuery Flexslider hinzu</label>
+			<label index="add_image">Bild hinzufügen</label>
 
 			<label index="ff.config">Konfiguration</label>
 			<label index="ff.maxwidth">Maximale Breite</label>
