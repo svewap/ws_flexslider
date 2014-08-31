@@ -8,12 +8,12 @@ page.includeJSFooterlibs {
 [global]
 
 page.includeJSFooter {
-	flexslider = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider.js
-	flexslider_textmode = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider.textmode.js
+	flexslider = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider-min.js
 }
 
 page.includeCSS {
 	flexslider = EXT:ws_flexslider/Resources/Public/Css/flexslider.css
+	flexslider_mods = EXT:ws_flexslider/Resources/Public/Css/mods.css
 }
 
 
@@ -59,7 +59,6 @@ plugin.tx_wsflexslider {
 		
 		carousel = {$plugin.tx_wsflexslider.carousel}
 		
-		textmode = 0
 	}
 	
 

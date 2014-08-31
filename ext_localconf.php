@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 Tx_Extbase_Utility_Extension::configurePlugin(
-	$_EXTKEY,
+	'WapplerSystems.' . $_EXTKEY,
 	'Pi1',
 	array(
 		'Flexslider' => 'list',
@@ -12,7 +12,6 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	),
 	// non-cacheable actions
 	array(
-		'Flexslider' => 'list',
 		
 	)
 );

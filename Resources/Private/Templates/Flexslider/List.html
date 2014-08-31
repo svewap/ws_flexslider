@@ -6,10 +6,11 @@
 
 <f:flashMessages class="flashmessage" />
 
-<div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if> <f:if condition="{0:settings.textmode} == {0:'true'}">textmode</f:if>">
+
+<div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
   <ul class="slides">
-		<f:for each="{images}" as="v">
-			<f:render partial="Flexslider/Entry" arguments="{image: v, settings: settings}" />
+		<f:for each="{images}" as="item">
+			<f:render partial="Flexslider/Entry" arguments="{item: item, settings: settings}" />
 		</f:for>
 		</ul>
 	</div>

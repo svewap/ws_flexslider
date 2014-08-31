@@ -1,4 +1,5 @@
 <?php
+namespace WapplerSystems\WsFlexslider\Controller;
 
 /***************************************************************
  *  Copyright notice
@@ -31,14 +32,19 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Controller_ActionController {
+class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-
+	
+	/**
+	 * @var \WapplerSystems\WsFlexslider\Domain\Repository\ImageRepository
+	 * @inject
+	 */
+	protected $imageRepository;
+	
 
 
 	public function initializeAction() {
 
-		$this->imageRepository = $this->objectManager->get('Tx_WsFlexslider_Domain_Repository_ImageRepository');
 		$this->configuration = $this->settings['flexslider'];
 
 
@@ -122,9 +128,6 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 		if (isset($this->settings['ff']['move']) && intval($this->settings['ff']['move']) > 0)
 			$this->settings['move'] = $this->settings['ff']['move'];
 
-		if (isset($this->settings['ff']['textmode']) && $this->settings['ff']['textmode'] != 'ts')
-			$this->settings['textmode'] = $this->settings['ff']['textmode'];
-
 	}
 
 	/**
@@ -133,47 +136,16 @@ class Tx_WsFlexslider_Controller_FlexsliderController extends Tx_Extbase_MVC_Con
 	 * @return void
 	 */
 	public function listAction() {
-
+		
 		$contentObject = $this->configurationManager->getContentObject();
 		$contentElement = $contentObject->data;
+		
+		//$contentuid = isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid'];
+		$contentuid = $contentElement['uid'];
 
-		$this->view->assign('uid', isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid']);
+		$this->view->assign('uid', $contentuid);
 		$this->view->assign('settings', $this->settings);
-		$this->view->assign('labels', $this->labels);
-		$this->view->assign('images', $this->getCurrentImages());
-	}
-
-
-	protected function getCurrentImages() {
-		$contentObject = $this->configurationManager->getContentObject();
-		$contentElement = $contentObject->data;
-
-		$images = array();
-		$uid = isset($contentElement['_LOCALIZED_UID']) ? $contentElement['_LOCALIZED_UID'] : $contentElement['uid'];
-
-		if (isset($uid)) { // Content Element
-			$images = $this->imageRepository->findByUids($this->getImageIdsByContentUid($uid));
-		} else if (isset($contentElement[0]) && !is_array(isset($contentElement[0]))) { // Fluid cObject data
-			$images = $this->imageRepository->findByUids(t3lib_div::trimExplode(',', $contentElement[0], true));
-		} else if (trim($this->configuration['images']) != '') { // TypoScript
-			$images = $this->imageRepository->findByUids(t3lib_div::trimExplode(',', $this->configuration['images'], true));
-		}
-
-		return $images;
-	}
-
-	/**
-	 *
-	 * @param integer $uid
-	 * @return array
-	 */
-	protected function getImageIdsByContentUid($uid) {
-		$uids = array();
-		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid', 'tx_wsflexslider_domain_model_image', 'content_uid=' . intval($uid).' AND deleted=0 AND hidden=0', '', 'sorting');
-		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))
-			$uids[] = (int) $row['uid'];
-		return $uids;
+		$this->view->assign('images', $this->imageRepository->findByContentUid($contentuid));
 	}
 
 }
-?>

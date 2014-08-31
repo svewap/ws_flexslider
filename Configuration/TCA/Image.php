@@ -9,7 +9,7 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, image',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'hidden;;1, title, description, textposition, styleclass, link, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'hidden;;1, title, sys_language_uid, description, textposition, styleclass, link, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -108,8 +108,7 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 			'config' => array(
 				'type' => 'text',
 				'cols' => 40,
-				'rows' => 15,
-				'eval' => 'trim',
+				'rows' => 10,
 				'wizards' => array(
 					'RTE' => array(
 						'icon' => 'wizard_rte2.gif',
@@ -143,9 +142,7 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:cms/locallang_ttc.xml:image_link',
 			'config' => array(
-				'type' => 'text',
-				'cols' => '30',
-				'rows' => '3',
+				'type' => 'input',
 				'wizards' => array(
 					'_PADDING' => 2,
 					'link' => array(
@@ -161,27 +158,48 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 		),
 		'image' => array(
 			'exclude' => 0,
+			'l10n_mode' => 'mergeIfNotBlank',
 			'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.image',
-			'config' => array(
-				'type' => 'group',
-				'internal_type' => 'file',
-				'uploadfolder' => 'uploads/tx_wsflexslider',
-				'show_thumbs' => 1,
-				'size' => 5,
-				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'disallowed' => '',
-			),
+			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+				'image',
+				array(
+					'minitems' => 0,
+					'maxitems' => 1,
+					'appearance' => array(
+						'createNewRelationLinkTitle' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:add_image',
+						'showAllLocalizationLink' => 1,
+					),
+					'foreign_match_fields' => array(
+						'fieldname' => 'image',
+						'tablenames' => 'tx_wsflexslider_domain_model_image',
+						'table_local' => 'sys_file',
+					),
+					// custom configuration for displaying fields in the overlay/reference table
+					// to use the newsPalette and imageoverlayPalette instead of the basicoverlayPalette
+					'foreign_types' => array(
+						\TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => array(
+							'showitem' => '
+								--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;newsPalette,
+								--palette--;;imageoverlayPalette,
+								--palette--;;filePalette'
+						),
+						
+					)
+				),
+				$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+			)
+			
 		),
 		'content_uid' => Array(
-				'label' => 'CC',
-				'config' => Array(
-						'type' => 'select',
-						'foreign_table' => 'tt_content',
-						//'foreign_table_where' => ...,
-						'size' => 1,
-						'minitems' => 0,
-						'maxitems' => 1,
-				),
+			'label' => 'CC',
+			'config' => Array(
+				'type' => 'select',
+				'foreign_table' => 'tt_content',
+				//'foreign_table_where' => ...,
+				'size' => 1,
+				'minitems' => 0,
+				'maxitems' => 1,
+			),
 		),
 	),
 );

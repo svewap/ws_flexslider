@@ -1,9 +1,11 @@
 <?php
+namespace WapplerSystems\WsFlexslider\Domain\Repository;
 
 /* * *************************************************************
  *  Copyright notice
  *
- *  (c)  Tim Lochmueller
+ *  (c) 2014 Sven Wappler <typo3YYYY@wapplersystems.de>, WapplerSystems
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -24,13 +26,13 @@
  * ************************************************************* */
 
 /**
- * Repository for Tx_Hettich_Domain_Repository_Exposition
+ * 
  *
- * @author     Michael Feinbier
+ * @author     Sven Wappler
  * @subpackage Repository
  * @license    http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_WsFlexslider_Domain_Repository_ImageRepository extends Tx_Extbase_Persistence_Repository {
+class ImageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
 	/**
 	 * All Queries withoud storagePID
@@ -40,44 +42,9 @@ class Tx_WsFlexslider_Domain_Repository_ImageRepository extends Tx_Extbase_Persi
 	public function createQuery() {
 		$query = parent::createQuery();
 		$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		$query->getQuerySettings()->setRespectSysLanguage(FALSE);
 		return $query;
 	}
 
-	/**
-	 * Finds an object matching the given identifier.
-	 *
-	 * @param  integer $uid The identifier of the object to find
-	 * @return object  The matching object if found, otherwise NULL
-	 */
-	public function findByUid($uid) {
-		if (!is_int($uid) || $uid < 0)
-			throw new InvalidArgumentException('The uid must be a positive integer', 1245071889);
-		if ($this->identityMap->hasIdentifier($uid, $this->objectType)) {
-			$object = $this->identityMap->getObjectByIdentifier($uid, $this->objectType);
-		} else {
-			$query = $this->createQuery();
-			$object = $query->matching($query->equals('uid', $uid))->execute()->getFirst();
-			$this->identityMap->registerObject($object, $uid);
-		}
-		return $object;
-	}
 
-	/**
-	 *
-	 * @param array $uids
-	 * @return array
-	 */
-	public function findByUids($uids) {
-		if (!is_array($uids))
-			throw new InvalidArgumentException('The uids must be stored in an array', 1245072889);
-		$objects = array();
-		foreach ($uids as $u)
-			$objects[] = $this->findByUid(intval($u));
-		return $objects;
-	}
-
-}
-
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/ws_flexslider/Classes/Domain/Repository/ImageRepository.php"]) {
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/ws_flexslider/Classes/Domain/Repository/ImageRepository.php"]);
 }

@@ -1,0 +1,25 @@
+
+
+.tx-ws-flexslider .caption-title { font-weight: bold; }
+.tx-ws-flexslider .caption-body p { margin-bottom: 0px; }
+.tx-ws-flexslider .caption-text { padding: 17px; }
+
+@media screen and (min-width: 861px) {
+  
+  .slides li div.captionwrapper { position: absolute; width: 350px; top:auto; bottom: 10px; }
+  .slides li div.caption span { color: #fff; display: block; }
+  .slides li div.caption .captiontitle { font-size: 18px; font-weight: bold; margin-bottom: 5px; text-align: right; }
+  .slides li div.caption .captiontext { font-size: 12px; line-height: 15px; }
+  
+  
+  .tx-ws-flexslider .caption-align-left .caption-text { left: 20px; }
+  .tx-ws-flexslider .caption-align-left .caption-link { left: 20px; }
+  .tx-ws-flexslider .caption-align-right .caption-text { right: 20px; }
+  .tx-ws-flexslider .caption-align-right .caption-link { right: 20px; }
+  .tx-ws-flexslider .caption-link { position: absolute; bottom: 20px; }
+  .tx-ws-flexslider .caption-text { position: absolute; width: 350px; top: 20px; background: rgba(255,255,255,0.9); }
+  
+  
+  
+  
+}

@@ -1,4 +1,5 @@
 <?php
+namespace WapplerSystems\WsFlexslider\Domain\Model;
 
 /***************************************************************
  *  Copyright notice
@@ -31,7 +32,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_WsFlexslider_Domain_Model_Image extends Tx_Extbase_DomainObject_AbstractEntity {
+class Image extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
 	/**
 	 * title
@@ -48,10 +49,9 @@ class Tx_WsFlexslider_Domain_Model_Image extends Tx_Extbase_DomainObject_Abstrac
 	protected $description;
 
 	/**
-	 * image
+	 * Fal image
 	 *
-	 * @var string
-	 * @validate NotEmpty
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
 	 */
 	protected $image;
 	
@@ -120,7 +120,7 @@ class Tx_WsFlexslider_Domain_Model_Image extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * Returns the image
 	 *
-	 * @return string $image
+	 * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $image
 	 */
 	public function getImage() {
 		return $this->image;
@@ -129,7 +129,7 @@ class Tx_WsFlexslider_Domain_Model_Image extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * Sets the image
 	 *
-	 * @param string $image
+	 * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $image
 	 * @return void
 	 */
 	public function setImage($image) {

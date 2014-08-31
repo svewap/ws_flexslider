@@ -2,20 +2,21 @@
 
 
 <li>
-	<div class="slidercontent wsflexslider-{image.styleclass}">
-		<f:if condition="{image.image}">
-			<f:image src="uploads/tx_wsflexslider/{image.image}" width="{settings.maxwidth}" height="{settings.maxheight}" alt="{image.title}" />
+	<div class="slidercontent wsflexslider-{item.styleclass}">
+		<f:if condition="{item.image}">
+			<f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" width="{settings.maxwidth}" height="{settings.maxheight}" />
+			
 		</f:if>
-		<div class="caption">
-			<div class="captionwrapper wsflexslider-align{image.textposition}">
-				<p class="captiontitle">{image.title}</p>
-				<f:if condition="{image.description}">
-				<div class="captiontext"><f:format.html>{image.description}</f:format.html></div>
+		<div class="caption-wrapper caption-align-{item.textposition}">
+			<div class="caption-text">
+				<p class="caption-title">{item.title}</p>
+				<f:if condition="{item.description}">
+					<div class="caption-body"><f:format.html>{item.description}</f:format.html></div>
 				</f:if>
 			</div>
-			<f:if condition="{image.link}">
-				<div class="captionlink">
-				<fs:DynLink arguments="{link: image.link}">
+			<f:if condition="{item.link}">
+				<div class="caption-link">
+				<fs:DynLink arguments="{link: item.link}">
 					<f:translate key="more">More</f:translate>
 				</fs:DynLink>
 				</div>

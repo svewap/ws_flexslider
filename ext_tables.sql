@@ -12,7 +12,7 @@ CREATE TABLE tx_wsflexslider_domain_model_image (
 
 	title varchar(255) DEFAULT '' NOT NULL,
 	description text NOT NULL,
-	image text NOT NULL,
+	image int(11) unsigned DEFAULT '0',
 	link text,
 	textposition varchar(10) DEFAULT 'left' NOT NULL,
 	styleclass varchar(10) DEFAULT 'style1' NOT NULL,
