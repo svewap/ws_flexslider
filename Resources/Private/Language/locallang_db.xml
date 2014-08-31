@@ -6,10 +6,8 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-            
 			<label index="tx_wsflexslider_domain_model_flexslider">Flexslider</label>
 			<label index="tx_wsflexslider_domain_model_flexslider.images">Images</label>
-
 			<label index="tx_wsflexslider_domain_model_image">Image</label>
 			<label index="tx_wsflexslider_domain_model_image.title">Title</label>
 			<label index="tx_wsflexslider_domain_model_image.description">Description</label>
@@ -17,7 +15,6 @@
 			<label index="tx_wsflexslider_domain_model_image.textposition">Text position</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_left">Left</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_right">Right</label>
-
 			<label index="tx_wsflexslider_domain_model_image.styleclass">Text style class</label>
 			<label index="tx_wsflexslider_domain_model_image.styleclass_style1">Style 1</label>
 			<label index="tx_wsflexslider_domain_model_image.styleclass_style2">Style 2</label>
@@ -32,11 +29,9 @@
 			<label index="tx_wsflexslider_domain_model_image.title">Titel</label>
 			<label index="tx_wsflexslider_domain_model_image.description">Beschreibung</label>
 			<label index="tx_wsflexslider_domain_model_image.image">Bild</label>
-			
 			<label index="tx_wsflexslider_domain_model_image.textposition">Textposition</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_left">Links</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_right">Rechts</label>
-			
 			<label index="tx_wsflexslider_domain_model_image.styleclass">Text Stilklasse</label>
 			<label index="tx_wsflexslider_domain_model_image.styleclass_style1">Stil 1</label>
 			<label index="tx_wsflexslider_domain_model_image.styleclass_style2">Stil 2</label>
