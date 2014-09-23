@@ -25,6 +25,7 @@
 			<label index="ff.maxheight">Max height</label>
 			<label index="ff.showtitle">Show Image Title</label>
 			<label index="ff.showcaption">Show Image Caption</label>
+			<label index="ff.showdescription">Show Image Description</label>
 			<label index="ff.typoscript">TypoScript</label>
 			<label index="ff.fade">Fade</label>
 			<label index="ff.slide">Slide</label>
