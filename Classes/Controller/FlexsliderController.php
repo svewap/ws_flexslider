@@ -62,6 +62,12 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 			$this->settings['maxwidth'] = $this->settings['ff']['maxwidth'];
 		if (isset($this->settings['ff']['maxheight']) && strlen($this->settings['ff']['maxheight']) > 0)
 			$this->settings['maxheight'] = $this->settings['ff']['maxheight'];
+        if (isset($this->settings['ff']['showtitle']))
+            $this->settings['showtitle'] = $this->settings['ff']['showtitle'];
+        if (isset($this->settings['ff']['showcaption']))
+            $this->settings['showcaption'] = $this->settings['ff']['showcaption'];
+        if (isset($this->settings['ff']['showdescription']))
+            $this->settings['showdescription'] = $this->settings['ff']['showdescription'];
 		if (isset($this->settings['ff']['animation']) && $this->settings['ff']['animation'] != 'ts')
 			$this->settings['animation'] = $this->settings['ff']['animation'];
 		if (isset($this->settings['ff']['easing']) && strlen($this->settings['ff']['easing']) > 0)

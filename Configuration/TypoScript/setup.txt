@@ -40,6 +40,9 @@ plugin.tx_wsflexslider {
 		useCSS = {$plugin.tx_wsflexslider.useCSS}
 		touch = {$plugin.tx_wsflexslider.touch}
 		video = {$plugin.tx_wsflexslider.video}
+        showcaption = {$plugin.tx_wsflexslider.showcaption}
+        showtitle = {$plugin.tx_wsflexslider.showtitle}
+        showdescription = {$plugin.tx_wsflexslider.showdescription}
 		controlNav = {$plugin.tx_wsflexslider.controlNav}
 		directionNav = {$plugin.tx_wsflexslider.directionNav}
 		keyboard = {$plugin.tx_wsflexslider.keyboard}

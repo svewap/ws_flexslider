@@ -37,7 +37,36 @@
 								</config>
 						</TCEforms>
 					</settings.ff.maxheight>
-
+					<settings.ff.showcaption>
+					    <TCEforms>
+					        <exclude>1</exclude>
+					        <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.showcaption</label>
+					        <config>
+					            <type>check</type>
+					            <default>1</default>
+					        </config>
+					    </TCEforms>
+					</settings.ff.showcaption>
+					<settings.ff.showtitle>
+					    <TCEforms>
+					        <exclude>1</exclude>
+					        <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.showtitle</label>
+					        <config>
+					            <type>check</type>
+					            <default>1</default>
+					        </config>
+					    </TCEforms>
+					</settings.ff.showtitle>
+                    <settings.ff.showdescription>
+					    <TCEforms>
+					        <exclude>1</exclude>
+					        <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.showdescription</label>
+					        <config>
+					            <type>check</type>
+					            <default>1</default>
+					        </config>
+					    </TCEforms>
+					</settings.ff.showdescription>
 					<settings.ff.animation>
 						<TCEforms>
 							<exclude>1</exclude>

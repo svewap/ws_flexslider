@@ -4,15 +4,23 @@
 <li>
 	<div class="slidercontent wsflexslider-{item.styleclass}">
 		<f:if condition="{item.image}">
-			<f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" width="{settings.maxwidth}" height="{settings.maxheight}" />
-			
+			<f:comment>
+			    
+			<f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" />
+			</f:comment>
+			<img src="<f:uri.image image="{item.image}" />" title="{item.image.orignalResource.title}" alt="{item.image.originalResource.alternative}" /> 
 		</f:if>
+		<f:if condition="{settings.showcaption}">
 		<div class="caption-wrapper caption-align-{item.textposition}">
 			<div class="caption-text">
-				<p class="caption-title">{item.title}</p>
-				<f:if condition="{item.description}">
-					<div class="caption-body"><f:format.html>{item.description}</f:format.html></div>
-				</f:if>
+			    <f:if condition="{settings.showtitle}">
+				    <p class="caption-title">{item.title}</p>			        
+			    </f:if>
+			    <f:if condition="{settings.showdescription}">
+                    <f:if condition="{item.description}">
+                        <div class="caption-body"><f:format.html>{item.description}</f:format.html></div>
+                    </f:if>			        
+			    </f:if>
 			</div>
 			<f:if condition="{item.link}">
 				<div class="caption-link">
@@ -22,5 +30,6 @@
 				</div>
 			</f:if>
 		</div>
+		</f:if>
 	</div>
 </li>
