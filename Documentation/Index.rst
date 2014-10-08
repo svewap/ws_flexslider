@@ -38,7 +38,7 @@ Flexslider for TYPO3
       Sven Wappler (`WapplerSystems TYPO3 Agentur <http://www.wapplersystems.de/>`_)
 
 :Email:
-      typo@wapplersystems.de
+      typo3YYYY@wapplersystems.de
 
 :License:
       GNU General Public License, either version 2 of the License or any
