@@ -9,7 +9,12 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, image',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'hidden;;1, title, sys_language_uid, description, textposition, styleclass, link, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array(
+			'showitem' => 'hidden;;1, title, sys_language_uid, 
+				description;LLL:EXT:cms/locallang_ttc.xlf:bodytext_formlabel;;richtext:rte_transform[flag=rte_enabled|mode=ts_css], 
+				textposition, styleclass, link, image,
+		
+				--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -103,6 +108,8 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 			),
 		),
 		'description' => array(
+			'l10n_mode' => 'prefixLangTitle',
+			'l10n_cat' => 'text',
 			'exclude' => 0,
 			'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.description',
 			'config' => array(
@@ -110,17 +117,21 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 				'cols' => 40,
 				'rows' => 10,
 				'wizards' => array(
+					'_PADDING' => 4,
+					'_VALIGN' => 'middle',
 					'RTE' => array(
 						'icon' => 'wizard_rte2.gif',
 						'notNewRecords'=> 1,
 						'RTEonly' => 1,
-						'script' => 'wizard_rte.php',
 						'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
-						'type' => 'script'
+						'type' => 'script',
+						'module' => array(
+							'name' => 'wizard_rte'
+						)
 					)
-				)
+				),
+				'softref' => 'typolink_tag,images,email[subst],url',
 			),
-			'defaultExtras' => 'richtext[]',
 		),
 		'textposition' => array(
 			'exclude' => 0,
