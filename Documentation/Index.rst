@@ -3,65 +3,61 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: Includes.txt
+
+
+.. _start:
 
 
 ====================
 Flexslider for TYPO3
 ====================
 
-:Extension key:
-      ws_flexslider
+.. only:: html
 
-:Version:
-      1.3.0
+    :Extension key:
+          ws_flexslider
 
-:Language:
-      en
+    :Version:
+          1.3.0
 
-:Description:
-      This extension makes it possible to integrate the
-      `jQuery Flexslider script <http://www.woothemes.com/flexslider/>`_ and
-      manage it through the TYPO3 backend.
+    :Language:
+          en
 
-:Keywords:
-      flexslider, jquery, frontend, javascript, slideshow
+    :Description:
+          This extension makes it possible to integrate the
+          `jQuery Flexslider script <http://www.woothemes.com/flexslider/>`_ and
+          manage it through the TYPO3 backend.
 
-:Author:
-      Sven Wappler (`WapplerSystems TYPO3 Agentur <http://www.wapplersystems.de/>`_)
+    :Keywords:
+          flexslider, jquery, frontend, javascript, slideshow
 
-:Email:
-      typo3YYYY@wapplersystems.de
+    :Author:
+          Sven Wappler (`WapplerSystems TYPO3 Agentur <http://wappler.systems/>`_)
 
-:License:
-      GNU General Public License, either version 2 of the License or any
-      later version.
+    :Email:
+          typo3YYYY@wapplersystems.de
 
-:Rendered:
-      |today|
+    :License:
+          GNU General Public License, either version 2 of the License or any
+          later version.
 
-
-This document is published under the Open Content License
-available from http://www.opencontent.org/opl.shtml
-
-The content of this document is related to TYPO3 - a GNU/GPL CMS/Framework
-available from http://www.typo3.org
+    :Rendered:
+          |today|
 
 
-Table Of Contents
-=================
+    This document is published under the Open Content License
+    available from http://www.opencontent.org/opl.shtml
+
+    The content of this document is related to TYPO3 - a GNU/GPL CMS/Framework
+    available from http://www.typo3.org
+
+
+    **Table of Contents**
 
 .. toctree::
    :maxdepth: 5
    :titlesonly:
-   :glob:
 
    Introduction/Index
    Screenshots/Index

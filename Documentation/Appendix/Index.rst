@@ -3,17 +3,9 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
-.. |br| raw:: html
+.. include:: ../Includes.txt
 
-   <br />
+.. _appendix:
 
 Appendix
 ========
@@ -34,6 +26,8 @@ submitting feature requests.
 Credits
 -------
 
-Sven Wappler |br| **WapplerSystems TYPO3 Agentur**
+Sven Wappler
+**WapplerSystems TYPO3 Agentur**
 
-WWW:   http://www.wapplersystems.de |br| Email: typo@wapplersystems.de
+WWW:   http://wappler.systems
+Email: typo3YYYY@wappler.systems

@@ -1,27 +1,19 @@
 ﻿.. |image01|             image:: ../Images/Screenshots/image01.png
-   :width: 654
-   :height: 515
 .. :align: center
 .. :border: 0
 .. :name: image01
 
-﻿.. |image02|             image:: ../Images/Screenshots/image02.png
-   :width: 904
-   :height: 628
+.. |image02|             image:: ../Images/Screenshots/image02.png
 .. :align: center
 .. :border: 0
 .. :name: image02
 
-﻿.. |image03|             image:: ../Images/Screenshots/image03.png
-   :width: 483
-   :height: 665
+.. |image03|             image:: ../Images/Screenshots/image03.png
 .. :align: center
 .. :border: 0
 .. :name: image03
 
-﻿.. |image04|             image:: ../Images/Screenshots/image04.png
-   :width: 914
-   :height: 691
+.. |image04|             image:: ../Images/Screenshots/image04.png
 .. :align: center
 .. :border: 0
 .. :name: image04
