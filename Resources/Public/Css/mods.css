@@ -4,6 +4,8 @@
 .tx-ws-flexslider .caption-body p { margin-bottom: 0px; }
 .tx-ws-flexslider .caption-text { padding: 17px; }
 
+.flexslider .slides img { height: auto; }
+
 @media screen and (min-width: 861px) {
   
   .slides li div.captionwrapper { position: absolute; width: 350px; top:auto; bottom: 10px; }
