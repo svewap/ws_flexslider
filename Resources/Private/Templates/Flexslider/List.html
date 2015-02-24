@@ -17,56 +17,56 @@
 	
 <prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
 
-$(window).load(function(){
-  $('#flexslider-{uid}').flexslider({
-    animation: "<f:format.raw value="{settings.animation}" />",
-    animationLoop: {settings.animationLoop},
-    itemMargin: {settings.itemMargin},
-    easing: "{settings.easing}",
-    direction: "{settings.direction}",
-    reverse: {settings.reverse},
-    smoothHeight: {settings.smoothHeight},
-    startAt: {settings.startAt},
-    slideshow: {settings.slideshow},
-    slideshowSpeed: {settings.slideshowSpeed},
-    animationSpeed: {settings.animationSpeed},
-    initDelay: {settings.initDelay},
-    randomize: {settings.randomize},
-    
-    pauseOnAction: {settings.pauseOnAction},
-    pauseOnHover: {settings.pauseOnHover},
-    useCSS: {settings.useCSS},
-    touch: {settings.touch},
-    video: {settings.video},
-    
-    controlNav: {settings.controlNav},
-    directionNav: {settings.directionNav},
-    prevText: "<f:translate key="prevText">Previous</f:translate>",
-    nextText: "<f:translate key="nextText">Next</f:translate>",
-    
-    keyboard: {settings.keyboard},
-    multipleKeyboard: {settings.multipleKeyboard},
-    mousewheel: {settings.mousewheel},
-    pausePlay: {settings.pausePlay},
-    pauseText: "<f:translate key="pauseText">Pause</f:translate>",
-    playText: "<f:translate key="playText">Play</f:translate>",
-    
-    controlsContainer: "{settings.controlsContainer}",
-    manualControls: "{settings.manualControls}",
-    sync: "{settings.sync}",
-    asNavFor: "{settings.asNavFor}",
-    
-    itemWidth: {settings.itemWidth},
-    itemMargin: {settings.itemMargin},
-    minItems: {settings.minItems},
-    maxItems: {settings.maxItems},
-    move: {settings.move},
-    
-    carousel: {settings.carousel},
-    start: function(slider){
-      $('body').removeClass('loading');
-    }
-  });
+jQuery(window).load(function() {
+    jQuery('#flexslider-{uid}').flexslider({
+        animation: "<f:format.raw value="{settings.animation}" />",
+        animationLoop: {settings.animationLoop},
+        itemMargin: {settings.itemMargin},
+        easing: "{settings.easing}",
+        direction: "{settings.direction}",
+        reverse: {settings.reverse},
+        smoothHeight: {settings.smoothHeight},
+        startAt: {settings.startAt},
+        slideshow: {settings.slideshow},
+        slideshowSpeed: {settings.slideshowSpeed},
+        animationSpeed: {settings.animationSpeed},
+        initDelay: {settings.initDelay},
+        randomize: {settings.randomize},
+
+        pauseOnAction: {settings.pauseOnAction},
+        pauseOnHover: {settings.pauseOnHover},
+        useCSS: {settings.useCSS},
+        touch: {settings.touch},
+        video: {settings.video},
+
+        controlNav: {settings.controlNav},
+        directionNav: {settings.directionNav},
+        prevText: "<f:translate key="prevText">Previous</f:translate>",
+        nextText: "<f:translate key="nextText">Next</f:translate>",
+
+        keyboard: {settings.keyboard},
+        multipleKeyboard: {settings.multipleKeyboard},
+        mousewheel: {settings.mousewheel},
+        pausePlay: {settings.pausePlay},
+        pauseText: "<f:translate key="pauseText">Pause</f:translate>",
+        playText: "<f:translate key="playText">Play</f:translate>",
+
+        controlsContainer: "{settings.controlsContainer}",
+        manualControls: "{settings.manualControls}",
+        sync: "{settings.sync}",
+        asNavFor: "{settings.asNavFor}",
+
+        itemWidth: {settings.itemWidth},
+        itemMargin: {settings.itemMargin},
+        minItems: {settings.minItems},
+        maxItems: {settings.maxItems},
+        move: {settings.move},
+
+        carousel: {settings.carousel},
+        start: function(slider){
+            jQuery('body').removeClass('loading');
+        }
+    });
 });
 
 </prod:pageRenderer.addJsFooterInlineCode>
