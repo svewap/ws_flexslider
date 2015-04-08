@@ -1,4 +1,6 @@
 <?php
+namespace WapplerSystems\WsFlexslider\ViewHelpers\PageRenderer;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -24,6 +26,8 @@
  ***************************************************************/
 
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  *
  * A view helper for adding inline JS Code
@@ -31,7 +35,7 @@
  * @author Sven Wappler <typo3YYYY@wapplersystems.de>
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
+class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
 
 
 	/**
@@ -44,7 +48,7 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	}
 	
 	/**
-	 * @var t3lib_PageRenderer
+	 * @var \TYPO3\CMS\Core\Page\PageRenderer
 	 */
 	protected $pageRenderer;
 	
@@ -54,17 +58,17 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	protected $configurationManager;
 	
 	/**
-	 * @param t3lib_PageRenderer $pageRenderer
+	 * @param \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer
 	 */
-	public function injectPageRenderer(t3lib_PageRenderer $pageRenderer) {
+	public function injectPageRenderer(\TYPO3\CMS\Core\Page\PageRenderer $pageRenderer) {
 		$this->pageRenderer = $pageRenderer;
 	}
 	
 	/**
-	 * @param Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager
+	 * @param \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface $configurationManager
 	 * @return void
 	 */
-	public function injectConfigurationManager(Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager) {
+	public function injectConfigurationManager(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface $configurationManager) {
 		$this->configurationManager = $configurationManager;
 	}
 	
@@ -76,7 +80,7 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	 */
 	protected function isCached() {
 		$userObjType = $this->configurationManager->getContentObject()->getUserObjectType();
-		return ($userObjType !== tslib_cObj::OBJECTTYPE_USER_INT);
+		return ($userObjType !== \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::OBJECTTYPE_USER_INT);
 	}
 	
 	
@@ -86,9 +90,8 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	 * @param string $block
 	 */
 	public function render() {
-		if (!$block) {
-			$block = $this->renderChildren();
-		}
+		$block = $this->renderChildren();
+
 		
 		if ($this->isCached()) {
 			$this->pageRenderer->addJsFooterInlineCode(
@@ -99,7 +102,7 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 			);
 		} else {
 			// additionalFooterData not possible in USER_INT
-			$GLOBALS['TSFE']->additionalFooterData[md5($this->arguments['name'])] = t3lib_div::wrapJS($block);
+			$GLOBALS['TSFE']->additionalFooterData[md5($this->arguments['name'])] = GeneralUtility::wrapJS($block);
 		}
 	}
 	

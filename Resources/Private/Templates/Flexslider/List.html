@@ -1,75 +1,78 @@
-{namespace prod=Tx_WsFlexslider_ViewHelpers}
-<f:layout name="Default" />
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:prod="http://typo3.org/ns/WapplerSystems/WsFlexslider/ViewHelpers">
+    <f:layout name="Default" />
 
 
-<f:section name="main">
+    <f:section name="main">
 
-<f:flashMessages class="flashmessage" />
+    <f:flashMessages class="flashmessage" />
 
 
-<div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
-  <ul class="slides">
-		<f:for each="{images}" as="item">
-			<f:render partial="Flexslider/Entry" arguments="{item: item, settings: settings}" />
-		</f:for>
-		</ul>
-	</div>
-	
-<prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
+    <div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
+        <ul class="slides">
+            <f:for each="{images}" as="item">
+                <f:render partial="Entry" section="Entry" arguments="{item: item, settings: settings}" />
+            </f:for>
+        </ul>
+    </div>
 
-jQuery(window).load(function() {
-    jQuery('#flexslider-{uid}').flexslider({
-        animation: "<f:format.raw value="{settings.animation}" />",
-        animationLoop: {settings.animationLoop},
-        itemMargin: {settings.itemMargin},
-        easing: "{settings.easing}",
-        direction: "{settings.direction}",
-        reverse: {settings.reverse},
-        smoothHeight: {settings.smoothHeight},
-        startAt: {settings.startAt},
-        slideshow: {settings.slideshow},
-        slideshowSpeed: {settings.slideshowSpeed},
-        animationSpeed: {settings.animationSpeed},
-        initDelay: {settings.initDelay},
-        randomize: {settings.randomize},
+    <prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
 
-        pauseOnAction: {settings.pauseOnAction},
-        pauseOnHover: {settings.pauseOnHover},
-        useCSS: {settings.useCSS},
-        touch: {settings.touch},
-        video: {settings.video},
+    jQuery(window).load(function() {
+        jQuery('#flexslider-<f:format.raw value="{uid}" />').flexslider({
+            animation: "<f:format.raw value="{settings.animation}" />",
+            animationLoop: {settings.animationLoop},
+            itemMargin: {settings.itemMargin},
+            easing: "{settings.easing}",
+            direction: "{settings.direction}",
+            reverse: {settings.reverse},
+            smoothHeight: {settings.smoothHeight},
+            startAt: {settings.startAt},
+            slideshow: {settings.slideshow},
+            slideshowSpeed: {settings.slideshowSpeed},
+            animationSpeed: {settings.animationSpeed},
+            initDelay: {settings.initDelay},
+            randomize: {settings.randomize},
 
-        controlNav: {settings.controlNav},
-        directionNav: {settings.directionNav},
-        prevText: "<f:translate key="prevText">Previous</f:translate>",
-        nextText: "<f:translate key="nextText">Next</f:translate>",
+            pauseOnAction: {settings.pauseOnAction},
+            pauseOnHover: {settings.pauseOnHover},
+            useCSS: {settings.useCSS},
+            touch: {settings.touch},
+            video: {settings.video},
 
-        keyboard: {settings.keyboard},
-        multipleKeyboard: {settings.multipleKeyboard},
-        mousewheel: {settings.mousewheel},
-        pausePlay: {settings.pausePlay},
-        pauseText: "<f:translate key="pauseText">Pause</f:translate>",
-        playText: "<f:translate key="playText">Play</f:translate>",
+            controlNav: {settings.controlNav},
+            directionNav: {settings.directionNav},
+            prevText: "<f:translate key="prevText">Previous</f:translate>",
+            nextText: "<f:translate key="nextText">Next</f:translate>",
 
-        controlsContainer: "{settings.controlsContainer}",
-        manualControls: "{settings.manualControls}",
-        sync: "{settings.sync}",
-        asNavFor: "{settings.asNavFor}",
+            keyboard: {settings.keyboard},
+            multipleKeyboard: {settings.multipleKeyboard},
+            mousewheel: {settings.mousewheel},
+            pausePlay: {settings.pausePlay},
+            pauseText: "<f:translate key="pauseText">Pause</f:translate>",
+            playText: "<f:translate key="playText">Play</f:translate>",
 
-        itemWidth: {settings.itemWidth},
-        itemMargin: {settings.itemMargin},
-        minItems: {settings.minItems},
-        maxItems: {settings.maxItems},
-        move: {settings.move},
+            controlsContainer: "{settings.controlsContainer}",
+            manualControls: "{settings.manualControls}",
+            sync: "{settings.sync}",
+            asNavFor: "{settings.asNavFor}",
 
-        carousel: {settings.carousel},
-        start: function(slider){
-            jQuery('body').removeClass('loading');
-        }
+            itemWidth: {settings.itemWidth},
+            itemMargin: {settings.itemMargin},
+            minItems: {settings.minItems},
+            maxItems: {settings.maxItems},
+            move: {settings.move},
+
+            carousel: {settings.carousel},
+            start: function(slider){
+                jQuery('body').removeClass('loading');
+            }
+        });
     });
-});
 
-</prod:pageRenderer.addJsFooterInlineCode>
+    </prod:pageRenderer.addJsFooterInlineCode>
 
-</f:section>
+    </f:section>
 
+</div>

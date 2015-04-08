@@ -1,4 +1,5 @@
 <?php
+namespace WapplerSystems\WsFlexslider\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
@@ -31,7 +32,7 @@
  * @author Sven Wappler <typo3YYYY@wapplersystems.de>
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_WsFlexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper
+class DynLinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper
 {
 
 	/**
@@ -90,12 +91,12 @@ class Tx_WsFlexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHe
 	{
 		$paramDataArr = explode(' ', $link);
 		// Combine labels and values into one array
-		$paramDataArr = Tx_WsFlexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, false);
+		$paramDataArr = \WapplerSystems\WsFlexslider\Utility\Div::combineArray($this->paramLabels, $paramDataArr, false);
 		// Save link data into ViewHelper arguments
 		$this->setArgumentsFromArray($paramDataArr);
 
 		if (isset($this->arguments['href']) && !empty($this->arguments['href'])) {
-			$cObj = $this->objectManager->get('tslib_cObj');
+			$cObj = $this->objectManager->get('TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
 				'returnLast' => true

@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 // Build extension name vars - used for plugin registration, flexforms and similar
-$extensionName = t3lib_div::underscoredToUpperCamelCase($_EXTKEY);
+$extensionName = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($_EXTKEY);
 $pluginSignature = strtolower($extensionName) . '_pi1';
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
@@ -75,7 +75,6 @@ $tempColumns = array(
 );
 
 
-\TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA('tt_content');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns, 1);
 
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages,recursive';

@@ -48,7 +48,7 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 		$this->configuration = $this->settings['flexslider'];
 
 
-		$FeConfigManager = $this->objectManager->get('Tx_Extbase_Configuration_FrontendConfigurationManager');
+		$FeConfigManager = $this->objectManager->get('TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager');
 		$ts = $FeConfigManager->getTypoScriptSetup();
 
 		// Check Static include

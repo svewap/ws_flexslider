@@ -1,0 +1,33 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:fs="http://typo3.org/ns/WapplerSystems/WsFlexslider/ViewHelpers">
+
+    <f:section name="Entry">
+
+    <li>
+        <div class="slidercontent wsflexslider-{item.styleclass}">
+            <f:if condition="{item.image}">
+                <f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" width="{settings.maxwidth}" height="{settings.maxheight}" />
+
+            </f:if>
+            <div class="caption-wrapper caption-align-{item.textposition}">
+                <div class="caption-text">
+                    <p class="caption-title">{item.title}</p>
+                    <f:if condition="{item.description}">
+                        <div class="caption-body"><f:format.html>{item.description}</f:format.html></div>
+                    </f:if>
+                </div>
+                <f:if condition="{item.link}">
+                    <div class="caption-link">
+                    <fs:DynLink arguments="{link: item.link}">
+                        <f:translate key="more">More</f:translate>
+                    </fs:DynLink>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </li>
+
+    </f:section>
+
+</div>
