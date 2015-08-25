@@ -97,7 +97,14 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 		if (isset($this->settings['ff']['video']) && $this->settings['ff']['video'] != 'ts')
 			$this->settings['video'] = $this->settings['ff']['video'];
 		if (isset($this->settings['ff']['controlNav']) && $this->settings['ff']['controlNav'] != 'ts')
-			$this->settings['controlNav'] = $this->settings['ff']['controlNav'];
+		{
+			if ( $this->settings['ff']['controlNav'] == 'thumbnails')
+				$this->settings['controlNav'] = "'thumbnails'";
+			else
+				$this->settings['controlNav'] = $this->settings['ff']['controlNav'];
+		}
+
+
 		if (isset($this->settings['ff']['directionNav']) && $this->settings['ff']['directionNav'] != 'ts')
 			$this->settings['directionNav'] = $this->settings['ff']['directionNav'];
 		if (isset($this->settings['ff']['keyboard']) && $this->settings['ff']['keyboard'] != 'ts')
