@@ -4,10 +4,10 @@
 
     <f:section name="Entry">
 
-    <li>
+		<li data-thumb="{f:uri.image(src:item.image.uid, treatIdAsReference:1, width: settings.maxwidth, height: settings.maxheight)}" data-caption="{item.title}">
         <div class="slidercontent wsflexslider-{item.styleclass}">
             <f:if condition="{item.image}">
-                <f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" width="{settings.maxwidth}" height="{settings.maxheight}" />
+            <f:image src="{item.image.uid}" treatIdAsReference="1" title="{item.image.originalResource.title}" alt="{item.image.originalResource.alternative}" width="{settings.maxwidth}" height="{settings.maxheight}" />
 
             </f:if>
             <div class="caption-wrapper caption-align-{item.textposition}">
