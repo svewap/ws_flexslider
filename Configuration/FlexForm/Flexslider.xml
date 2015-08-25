@@ -464,6 +464,10 @@
 										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
 										<numIndex index="1">false</numIndex>
 									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.thumbnails</numIndex>
+										<numIndex index="1">thumbnails</numIndex>
+									</numIndex>
 								</items>
 								<maxitems>1</maxitems>
 								<size>1</size>

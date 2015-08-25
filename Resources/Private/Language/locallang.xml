@@ -56,6 +56,7 @@
 			<!-- Primary Controls -->
 			<label index="ff.controlNav">Control navigation on</label>
 			<label index="ff.directionNav">Direction navigation on</label>
+			<label index="ff.thumbnails">Thumbnails</label>
 
 			<!-- Secondary Navigation -->
 			<label index="ff.secondarynavigation">Secondary navigation</label>
@@ -84,7 +85,7 @@
 			<label index="playText">Play</label>
 			<label index="prevText">Previous</label>
 			<label index="nextText">Next</label>
-			
+
 		</languageKey>
 		<languageKey index="de" type="array">
 
