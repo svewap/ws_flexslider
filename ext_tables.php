@@ -8,7 +8,7 @@ $extensionName = t3lib_div::underscoredToUpperCamelCase($_EXTKEY);
 $pluginSignature = strtolower($extensionName) . '_pi1';
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-	$_EXTKEY,
+	'WapplerSystems.'.$_EXTKEY,
 	'Pi1',
 	'WS Flexslider'
 );

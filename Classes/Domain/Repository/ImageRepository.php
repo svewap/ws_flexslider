@@ -34,17 +34,34 @@ namespace WapplerSystems\WsFlexslider\Domain\Repository;
  */
 class ImageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
+	public function initializeObject(){
+		$querySettings = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
+		
+		//don't add the pid constraint
+		$querySettings->setRespectStoragePage(FALSE);
+		
+	}
+	
+	
+	
+	
 	/**
-	 * All Queries withoud storagePID
-	 *
-	 * @return Tx_Extbase_Persistence_QueryInterface
+	 * Query for images by content uid and sorted by sorting position
+	 * 
+	 * @param \int $cuid Content uid 
+	 * 
+	 * @return \TYPO3\CMS\Extbase\Persistence\QueryResult the images for the selected content element
 	 */
-	public function createQuery() {
-		$query = parent::createQuery();
+	public function findAllByContentUid($cuid){
+		$query = $this->createQuery();
+		//remove the storage pid and language constraints
 		$query->getQuerySettings()->setRespectStoragePage(FALSE);
 		$query->getQuerySettings()->setRespectSysLanguage(FALSE);
-		return $query;
+		//$query->setOrderings(array('sorting'=>\TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_ASCENDING));
+		return $query->matching($query->equals('content_uid',$cuid))
+				->setOrderings(array('sorting'=>\TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING))
+				->execute();
+		
 	}
-
 
 }

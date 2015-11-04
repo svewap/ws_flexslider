@@ -1,5 +1,5 @@
 <?php
-
+namespace WapplerSystems\WsFlexslider\ViewHelpers;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,7 +31,7 @@
  * @author Sven Wappler <typo3YYYY@wapplersystems.de>
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_WsFlexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper
+class DynLinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper
 {
 
 	/**

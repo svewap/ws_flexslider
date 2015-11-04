@@ -2,6 +2,15 @@ plugin.tx_wsflexslider {
 
 	# cat=plugin.tx_wsflexslider; type=boolean; label=Include jQuery core: Incluse jQuery core script
 	includejquerycore = 
+	
+	# cat=plugin.tx_wsflexslider; type=string; label=Location of the CSS file 
+	theme = EXT:ws_flexslider/Resources/Public/Css/flexslider_default.css
+    
+    # cat=plugin.tx_wsflexslider; type=string; label=Location of the mods CSS file
+    mods = EXT:ws_flexslider/Resources/Public/Css/mods.css
+    
+    # cat=plugin.tx_wsflexslider; type=boolean; label:Place Javascript in the page footer
+    moveJsToFooter = 0
     
     # cat=plugin-tx_wsflexslider; type=boolean; label=Show the image captions(title,description)
     showcaption = 1

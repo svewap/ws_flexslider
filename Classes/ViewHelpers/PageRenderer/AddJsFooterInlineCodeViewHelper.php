@@ -1,4 +1,5 @@
 <?php
+namespace WapplerSystems\WsFlexslider\ViewHelpers\PageRenderer;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,7 +32,7 @@
  * @author Sven Wappler <typo3YYYY@wapplersystems.de>
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
+class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
 
 
 	/**
@@ -44,29 +45,22 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	}
 	
 	/**
-	 * @var t3lib_PageRenderer
+	 * pageRenderer
+	 * 
+	 * @var \TYPO3\CMS\Core\Page\PageRenderer
+	 * @inject
 	 */
 	protected $pageRenderer;
 	
 	/**
-	 * @var Tx_Extbase_Configuration_ConfigurationManagerInterface
+	 * configurationManager
+	 * 
+	 * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface
+	 * @inject
 	 */
 	protected $configurationManager;
 	
-	/**
-	 * @param t3lib_PageRenderer $pageRenderer
-	 */
-	public function injectPageRenderer(t3lib_PageRenderer $pageRenderer) {
-		$this->pageRenderer = $pageRenderer;
-	}
 	
-	/**
-	 * @param Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager
-	 * @return void
-	 */
-	public function injectConfigurationManager(Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager) {
-		$this->configurationManager = $configurationManager;
-	}
 	
 	
 	/**
@@ -76,7 +70,7 @@ class Tx_WsFlexslider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper e
 	 */
 	protected function isCached() {
 		$userObjType = $this->configurationManager->getContentObject()->getUserObjectType();
-		return ($userObjType !== tslib_cObj::OBJECTTYPE_USER_INT);
+		return ($userObjType !== \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::OBJECTTYPE_USER_INT);
 	}
 	
 	

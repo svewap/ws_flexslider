@@ -37,6 +37,31 @@
 								</config>
 						</TCEforms>
 					</settings.ff.maxheight>
+					<settings.ff.theme>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.theme</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">Typoscript</numIndex>
+										<numIndex index="1">ts</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.themedefault</numIndex>
+										<numIndex index="1">EXT:ws_flexslider/Resources/Public/Css/flexslider_default.css</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.themeclean</numIndex>
+										<numIndex index="1">EXT:ws_flexslider/Resources/Public/Css/flexslider_clean.css</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</settings.ff.theme>
 					<settings.ff.showcaption>
 					    <TCEforms>
 					        <exclude>1</exclude>

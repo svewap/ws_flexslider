@@ -1,3 +1,12 @@
+{namespace ws=WapplerSystems\WsFlexslider\ViewHelpers}
+
+<f:if condition="{settings.theme}">
+	<ws:includeFile path="{settings.theme}" />
+</f:if>
+<f:if condition="{settings.mods}">
+	<ws:includeFile path="{settings.mods}" />
+</f:if>
+
 <div class="tx-ws-flexslider">
 	<f:render section="main" />
 </div>

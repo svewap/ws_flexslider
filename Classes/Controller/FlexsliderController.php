@@ -62,6 +62,8 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 			$this->settings['maxwidth'] = $this->settings['ff']['maxwidth'];
 		if (isset($this->settings['ff']['maxheight']) && strlen($this->settings['ff']['maxheight']) > 0)
 			$this->settings['maxheight'] = $this->settings['ff']['maxheight'];
+		if (isset($this->settings['ff']['theme']) && $this->settings['ff']['theme'] != 'ts')
+			$this->settings['theme'] = $this->settings['ff']['theme'];
         if (isset($this->settings['ff']['showtitle']))
             $this->settings['showtitle'] = $this->settings['ff']['showtitle'];
         if (isset($this->settings['ff']['showcaption']))
@@ -151,7 +153,7 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
 		$this->view->assign('uid', $contentuid);
 		$this->view->assign('settings', $this->settings);
-		$this->view->assign('images', $this->imageRepository->findByContentUid($contentuid));
+		$this->view->assign('images', $this->imageRepository->findAllByContentUid($contentuid));
 	}
 
 }

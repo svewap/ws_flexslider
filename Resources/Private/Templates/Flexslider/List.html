@@ -1,9 +1,8 @@
-{namespace prod=Tx_WsFlexslider_ViewHelpers}
+{namespace ws=WapplerSystems\WsFlexslider\ViewHelpers}
 <f:layout name="Default" />
 
 
 <f:section name="main">
-
 <div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
   <ul class="slides">
 		<f:for each="{images}" as="item">
@@ -12,7 +11,7 @@
 		</ul>
 	</div>
 	
-<prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
+<ws:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
 
 $(window).load(function(){
   $('#flexslider-{uid}').flexslider({
@@ -66,7 +65,7 @@ $(window).load(function(){
   });
 });
 
-</prod:pageRenderer.addJsFooterInlineCode>
+</ws:pageRenderer.addJsFooterInlineCode>
 
 </f:section>
 

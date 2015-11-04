@@ -1,4 +1,4 @@
-{namespace fs=Tx_WsFlexslider_ViewHelpers}
+{namespace ws=WapplerSystems\WsFlexslider\ViewHelpers}
 
 
 <li>
@@ -20,9 +20,9 @@
 			</div>
 			<f:if condition="{item.link}">
 				<div class="caption-link">
-				<fs:DynLink arguments="{link: item.link}">
+				<ws:DynLink arguments="{link: item.link}">
 					<f:translate key="more">More</f:translate>
-				</fs:DynLink>
+				</ws:DynLink>
 				</div>
 			</f:if>
 		</div>

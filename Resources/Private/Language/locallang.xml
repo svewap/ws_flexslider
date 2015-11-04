@@ -23,6 +23,9 @@
 			<label index="ff.config">Configuration</label>
 			<label index="ff.maxwidth">Max width</label>
 			<label index="ff.maxheight">Max height</label>
+			<label index="ff.theme">Select Theme</label>
+			<label index="ff.themedefault">Default Theme</label>
+			<label index="ff.themeclean">Clean Theme</label>
 			<label index="ff.showtitle">Show Image Title</label>
 			<label index="ff.showcaption">Show Image Caption</label>
 			<label index="ff.showdescription">Show Image Description</label>

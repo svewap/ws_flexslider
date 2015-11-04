@@ -1,22 +1,4 @@
 
-[globalVar = LIT:1 = {$plugin.tx_wsflexslider.includejquerycore}]
-page.includeJSFooterlibs {
-	jquery = http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-	jquery.external = 1
-	jquery.forceOnTop = 1
-}
-[global]
-
-page.includeJSFooter {
-	flexslider = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider-min.js
-}
-
-page.includeCSS {
-	flexslider = EXT:ws_flexslider/Resources/Public/Css/flexslider.css
-	flexslider_mods = EXT:ws_flexslider/Resources/Public/Css/mods.css
-}
-
-
 plugin.tx_wsflexslider {
 
 	settings {
@@ -62,6 +44,10 @@ plugin.tx_wsflexslider {
 		
 		carousel = {$plugin.tx_wsflexslider.carousel}
 		
+		theme = {$plugin.tx_wsflexslider.theme}
+		mods = {$plugin.tx_wsflexslider.mods}
+		moveJsToFooter = {$plugin.tx_wsflexslider.moveJsToFooter}
+		
 	}
 	
 
@@ -78,4 +64,17 @@ plugin.tx_wsflexslider {
 		# rewrittenPropertyMapper = 1
 	}
 }
+
+[globalVar = LIT:1 = {$plugin.tx_wsflexslider.includejquerycore}]
+page.includeJSFooterlibs {
+	jquery = http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+	jquery.external = 1
+	jquery.forceOnTop = 1
+}
+[global]
+
+page.includeJSFooter {
+	flexslider = EXT:ws_flexslider/Resources/Public/JavaScript/jquery.flexslider-min.js
+}
+
 
