@@ -12,7 +12,7 @@ plugin.tx_wsflexslider {
     # cat=plugin.tx_wsflexslider; type=boolean; label:Place Javascript in the page footer
     moveJsToFooter = 0
     
-    # cat=plugin-tx_wsflexslider; type=boolean; label=Show the image captions(title,description)
+    # cat=plugin.tx_wsflexslider; type=boolean; label=Show the image captions(title,description)
     showcaption = 1
     
     # cat=plugin.tx_wsflexslider; type=boolean; label=Show the image title

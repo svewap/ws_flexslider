@@ -1,5 +1,5 @@
 <?php
-
+namespace WapplerSystems\WsFlexslider;
 /* * *************************************************************
  *  Copyright notice
  *
@@ -30,7 +30,7 @@
  * @package	TYPO3
  * @subpackage 
  */
-class Tx_WsFlexslider_Wizicon {
+class Wizicon {
 
 	/**
 	 * Processing the wizard items array
@@ -44,7 +44,7 @@ class Tx_WsFlexslider_Wizicon {
 		$LL = $this->includeLocalLang();
 
 		$wizardItems['plugins_tx_wsflexslider_pi1'] = array(
-			'icon' => t3lib_extMgm::extRelPath('ws_flexslider') . 'Resources/Public/Icons/icon.png',
+			'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('ws_flexslider') . 'Resources/Public/Icons/icon.png',
 			'title' => $LANG->getLLL('list_title', $LL),
 			'description' => $LANG->getLLL('list_plus_wiz_description', $LL),
 			'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=wsflexslider_pi1'
@@ -59,12 +59,12 @@ class Tx_WsFlexslider_Wizicon {
 	 * @return	The array with language labels
 	 */
 	function includeLocalLang() {
-		$llFile = t3lib_extMgm::extPath('ws_flexslider') . '/Resources/Private/Language/locallang.xml';
+		$llFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('ws_flexslider') . '/Resources/Private/Language/locallang.xml';
 		if (class_exists('t3lib_l10n_parser_Llxml')) {
-			$xmlParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
+			$xmlParser = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('t3lib_l10n_parser_Llxml');
 			$LOCAL_LANG = $xmlParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
 		} else {
-			$LOCAL_LANG = t3lib_div::readLLXMLfile($llFile, $GLOBALS['LANG']->lang);
+			$LOCAL_LANG = \TYPO3\CMS\Core\Utility\GeneralUtility::readLLXMLfile($llFile, $GLOBALS['LANG']->lang);
 		}
 		return $LOCAL_LANG;
 	}

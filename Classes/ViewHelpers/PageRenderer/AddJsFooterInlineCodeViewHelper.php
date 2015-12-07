@@ -93,7 +93,7 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
 			);
 		} else {
 			// additionalFooterData not possible in USER_INT
-			$GLOBALS['TSFE']->additionalFooterData[md5($this->arguments['name'])] = t3lib_div::wrapJS($block);
+			$GLOBALS['TSFE']->additionalFooterData[md5($this->arguments['name'])] = \TYPO3\CMS\Core\Utility\GeneralUtility::wrapJS($block);
 		}
 	}
 	

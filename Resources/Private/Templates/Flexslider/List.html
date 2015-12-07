@@ -1,8 +1,13 @@
 {namespace ws=WapplerSystems\WsFlexslider\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
 <f:layout name="Default" />
 
 
 <f:section name="main">
+<v:asset.script path="EXT:ws_flexslider/Resources/Public/Javascript/jquery.flexslider.min.js" name="flexslider" movable="1" dependancies="jquery" />
 <div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
   <ul class="slides">
 		<f:for each="{images}" as="item">
@@ -69,3 +74,4 @@ $(window).load(function(){
 
 </f:section>
 
+</div>
