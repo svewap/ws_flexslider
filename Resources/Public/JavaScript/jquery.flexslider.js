@@ -844,7 +844,7 @@
               }
             }());
 
-            return (posCalc * -1) + "px";
+            return (Math.floor(posCalc) * -1) + "px";
           }());
 
       if (slider.transitions) {
