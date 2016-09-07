@@ -19,7 +19,7 @@ Flexslider for TYPO3
           ws_flexslider
 
     :Version:
-          1.3.0
+          |release|
 
     :Language:
           en

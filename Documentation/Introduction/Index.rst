@@ -18,12 +18,6 @@ Online Demo:
 `http://t3bootstrap.de/de/extensions/ws-flexslider/ <http://t3bootstrap.de/de/extensions/ws-flexslider/>`_
 
 
-Requirements
-------------
-
-- TYPO3 CMS 6.2 LTS
-
-
 Main Features
 -------------
 

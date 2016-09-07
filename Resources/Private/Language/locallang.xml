@@ -44,6 +44,7 @@
 			<label index="ff.randomize">Random mode</label>
 			<label index="ff.textmode">Text mode</label>
 			<label index="ff.primarysettings">Primary Settings</label>
+			<label index="templateLayout">Template Layout</label>
 
 			<!-- Usability Features -->
 			<label index="ff.primarycontrols">Primary controls</label>
@@ -84,7 +85,7 @@
 			<label index="playText">Play</label>
 			<label index="prevText">Previous</label>
 			<label index="nextText">Next</label>
-			
+
 		</languageKey>
 		<languageKey index="de" type="array">
 

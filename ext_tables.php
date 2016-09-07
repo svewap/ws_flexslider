@@ -42,40 +42,12 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
 		),
 		'searchFields' => 'title,description,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Image.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/picture.png'
+		'iconfile' => 'EXT:ws_flexslider/Resources/Public/Icons/picture.png'
 	),
 );
 
 
-$tempColumns = array(
-	'tx_wsflexslider_images' => array(
-		'exclude' => 0,
-		'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:tx_wsflexslider_domain_model_flexslider.images',
-		'config' => array(
-			'type' => 'inline',
-			'foreign_table' => 'tx_wsflexslider_domain_model_image',
-			'foreign_field' => 'content_uid',
-			'foreign_label' => 'title',
-			'foreign_sortby' => 'sorting',
-			'maxitems' => '100',
-			'appearance' => array(
-				#'collapseAll' => 0, // Auskommentieren, da es sonst immer als true interpretiert wird
-				'expandSingle' => true,
-				'newRecordLinkAddTitle' => 1,
-				'newRecordLinkPosition' => "both",
-				'showAllLocalizationLink' => TRUE,
-				'showPossibleLocalizationRecords' => TRUE,
-			),
-			'behaviour' => array(
-				'localizationMode' => 'select',
-				'localizeChildrenAtParentLocalization' => TRUE,
-			),
-		)
-	),
-);
 
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns, 1);
 
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages,recursive';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'tx_wsflexslider_images,pi_flexform';

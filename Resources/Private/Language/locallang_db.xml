@@ -12,6 +12,7 @@
 			<label index="tx_wsflexslider_domain_model_image.title">Title</label>
 			<label index="tx_wsflexslider_domain_model_image.description">Description</label>
 			<label index="tx_wsflexslider_domain_model_image.image">Image</label>
+			<label index="tx_wsflexslider_domain_model_image.link">Link</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition">Text position</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_left">Left</label>
 			<label index="tx_wsflexslider_domain_model_image.textposition_right">Right</label>

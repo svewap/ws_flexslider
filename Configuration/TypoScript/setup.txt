@@ -60,12 +60,23 @@ plugin.tx_wsflexslider {
 		carousel = {$plugin.tx_wsflexslider.carousel}
 		
 	}
-	
+
 
 	view {
-		templateRootPath = {$plugin.tx_wsflexslider.view.templateRootPath}
-		partialRootPath = {$plugin.tx_wsflexslider.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_wsflexslider.view.layoutRootPath}
+		templateRootPaths {
+			0 = EXT:ws_flexslider/Resources/Private/Templates/
+			1 = {$plugin.tx_wsflexslider.view.templateRootPath}
+		}
+
+		partialRootPaths {
+			0 = EXT:ws_flexslider/Resources/Private/Partials/
+			1 = {$plugin.tx_wsflexslider.view.partialRootPath}
+		}
+
+		layoutRootPaths {
+			0 = EXT:ws_flexslider/Resources/Private/Layouts/
+			1 = {$plugin.tx_wsflexslider.view.layoutRootPath}
+		}
 	}
 	persistence {
 		storagePid = {$plugin.tx_wsflexslider.persistence.storagePid}

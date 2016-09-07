@@ -1,756 +1,898 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <T3DataStructure>
-	<meta>
-		<langDisable>1</langDisable>
-	</meta>
-	<sheets>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
 
-		<sDEF>
-			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.config</sheetTitle>
-				</TCEforms>
-				<type>array</type>
-				<el>
-				
-				
-					<settings.ff.maxwidth>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxwidth</label>
-								<config>
-									<type>input</type>
-									<size>5</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.maxwidth>
-					
-					<settings.ff.maxheight>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxheight</label>
-								<config>
-									<type>input</type>
-									<size>5</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.maxheight>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.config</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
 
-					<settings.ff.animation>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animation</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.fade</numIndex>
-										<numIndex index="1">fade</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slide</numIndex>
-										<numIndex index="1">slide</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.animation>
-					
-					<settings.ff.easing>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.easing</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-								</config>
-						</TCEforms>
-					</settings.ff.easing>
-					
-					<settings.ff.direction>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.direction</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.vertical</numIndex>
-										<numIndex index="1">vertical</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.horizontal</numIndex>
-										<numIndex index="1">horizontal</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.direction>
-					
-					<settings.ff.reverse>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.reverse</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.reverse>
-					
-					<settings.ff.animationLoop>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animationLoop</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.animationLoop>
-					
-					<settings.ff.smoothHeight>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.smoothHeight</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.smoothHeight>
-					
-					<settings.ff.startAt>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.startAt</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.startAt>
-					
-					<settings.ff.slideshow>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slideshow</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.slideshow>
-					
-					<settings.ff.slideshowSpeed>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slideshowSpeed</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.slideshowSpeed>
-					
-					<settings.ff.animationSpeed>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animationSpeed</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.animationSpeed>
-					
-					<settings.ff.initDelay>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.initDelay</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.initDelay>
-					
-					<settings.ff.randomize>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.randomize</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.randomize>
-					
-					<settings.ff.pauseOnAction>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pauseOnAction</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.pauseOnAction>
-					
-					<settings.ff.pauseOnHover>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pauseOnHover</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.pauseOnHover>
-					
-					<settings.ff.useCSS>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.useCSS</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.useCSS>
-					
-					<settings.ff.touch>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.touch</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.touch>
-					
-					<settings.ff.video>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.video</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.video>
-					
-					<settings.ff.textmode>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.textmode</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.textmode>
-					
 
-				</el>
-			</ROOT>
-		</sDEF>
-		
-		
-		<primarycontrols>
-			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.primarycontrols</sheetTitle>
-				</TCEforms>
-				<type>array</type>
-				<el>
-				
-					<settings.ff.controlNav>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.controlNav</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.controlNav>
-					
-					<settings.ff.directionNav>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.directionNav</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.directionNav>
-				
-				</el>
-			</ROOT>
-		</primarycontrols>
-				
-		
-		<secondarynavigation>
-			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.secondarynavigation</sheetTitle>
-				</TCEforms>
-				<type>array</type>
-				<el>
-				
-					<settings.ff.keyboard>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.keyboard</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.keyboard>
-					
-					<settings.ff.multipleKeyboard>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.multipleKeyboard</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.multipleKeyboard>
-					
-					<settings.ff.mousewheel>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.mousewheel</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.mousewheel>
-					
-					<settings.ff.pausePlay>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pausePlay</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript</numIndex>
-										<numIndex index="1">ts</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes</numIndex>
-										<numIndex index="1">true</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no</numIndex>
-										<numIndex index="1">false</numIndex>
-									</numIndex>
-								</items>
-								<maxitems>1</maxitems>
-								<size>1</size>
-							</config>
-						</TCEforms>
-					</settings.ff.pausePlay>
-					
-				</el>
-			</ROOT>
-		</secondarynavigation>
-		
-		<specialproperties>
-			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.specialproperties</sheetTitle>
-				</TCEforms>
-				<type>array</type>
-				<el>
-				
-					<settings.ff.controlsContainer>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.controlsContainer</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.controlsContainer>
-					
-					<settings.ff.manualControls>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.manualControls</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.manualControls>
-					
-					<settings.ff.sync>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.sync</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.sync>
-					
-					<settings.ff.asNavFor>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.asNavFor</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>trim</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.asNavFor>
-				
-				</el>
-			</ROOT>
-		</specialproperties>
-		
-		<carousel>
-			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.carousel</sheetTitle>
-				</TCEforms>
-				<type>array</type>
-				<el>
-					
-					<settings.ff.itemWidth>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.itemWidth</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.itemWidth>
-					
-					<settings.ff.itemMargin>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.itemMargin</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.itemMargin>
-					
-					<settings.ff.minItems>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.minItems</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.minItems>
-					
-					<settings.ff.maxItems>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxItems</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.maxItems>
-					
-					<settings.ff.move>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.move</label>
-							<config>
-									<type>input</type>
-									<size>12</size>
-									<eval>int</eval>
-								</config>
-						</TCEforms>
-					</settings.ff.move>
-					
-				</el>
-			</ROOT>
-		</carousel>
-		
-		
+                    <settings.ff.maxwidth>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxwidth</label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.maxwidth>
 
-	</sheets>
+                    <settings.ff.maxheight>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxheight</label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.maxheight>
+
+                    <settings.ff.animation>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animation</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.fade
+                                        </numIndex>
+                                        <numIndex index="1">fade</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slide
+                                        </numIndex>
+                                        <numIndex index="1">slide</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.animation>
+
+                    <settings.ff.easing>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.easing</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.easing>
+
+                    <settings.ff.direction>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.direction</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.vertical
+                                        </numIndex>
+                                        <numIndex index="1">vertical</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.horizontal
+                                        </numIndex>
+                                        <numIndex index="1">horizontal</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.direction>
+
+                    <settings.ff.reverse>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.reverse</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.reverse>
+
+                    <settings.ff.animationLoop>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animationLoop
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.animationLoop>
+
+                    <settings.ff.smoothHeight>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.smoothHeight
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.smoothHeight>
+
+                    <settings.ff.startAt>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.startAt</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.startAt>
+
+                    <settings.ff.slideshow>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slideshow</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.slideshow>
+
+                    <settings.ff.slideshowSpeed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.slideshowSpeed
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.slideshowSpeed>
+
+                    <settings.ff.animationSpeed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.animationSpeed
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.animationSpeed>
+
+                    <settings.ff.initDelay>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.initDelay</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.initDelay>
+
+                    <settings.ff.randomize>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.randomize</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.randomize>
+
+                    <settings.ff.pauseOnAction>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pauseOnAction
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.pauseOnAction>
+
+                    <settings.ff.pauseOnHover>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pauseOnHover
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.pauseOnHover>
+
+                    <settings.ff.useCSS>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.useCSS</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.useCSS>
+
+                    <settings.ff.touch>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.touch</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.touch>
+
+                    <settings.ff.video>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.video</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.video>
+
+                    <settings.ff.textmode>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.textmode</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.textmode>
+
+
+                    <!-- Template Layout -->
+                    <settings.templateLayout>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xlf:templateLayout</label>
+                            <config>
+                                <type>select</type>
+                                <itemsProcFunc>WapplerSystems\WsFlexslider\Hooks\ItemsProcFunc->user_templateLayout</itemsProcFunc>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.templateLayout>
+
+
+                </el>
+            </ROOT>
+        </sDEF>
+
+
+        <primarycontrols>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.primarycontrols
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.ff.controlNav>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.controlNav</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.controlNav>
+
+                    <settings.ff.directionNav>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.directionNav
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.directionNav>
+
+                </el>
+            </ROOT>
+        </primarycontrols>
+
+
+        <secondarynavigation>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.secondarynavigation
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.ff.keyboard>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.keyboard</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.keyboard>
+
+                    <settings.ff.multipleKeyboard>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.multipleKeyboard
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.multipleKeyboard>
+
+                    <settings.ff.mousewheel>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.mousewheel</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.mousewheel>
+
+                    <settings.ff.pausePlay>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.pausePlay</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.pausePlay>
+
+                </el>
+            </ROOT>
+        </secondarynavigation>
+
+        <specialproperties>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.specialproperties
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.ff.controlsContainer>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.controlsContainer
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.controlsContainer>
+
+                    <settings.ff.manualControls>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.manualControls
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.manualControls>
+
+                    <settings.ff.sync>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.sync</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.sync>
+
+                    <settings.ff.asNavFor>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.asNavFor</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.asNavFor>
+
+                </el>
+            </ROOT>
+        </specialproperties>
+
+        <carousel>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.carousel</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.ff.itemWidth>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.itemWidth</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.itemWidth>
+
+                    <settings.ff.itemMargin>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.itemMargin</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.itemMargin>
+
+                    <settings.ff.minItems>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.minItems</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.minItems>
+
+                    <settings.ff.maxItems>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.maxItems</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.maxItems>
+
+                    <settings.ff.move>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:ff.move</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ff.move>
+
+                </el>
+            </ROOT>
+        </carousel>
+
+
+    </sheets>
 </T3DataStructure>

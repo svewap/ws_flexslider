@@ -8,8 +8,7 @@
 
     <f:flashMessages class="flashmessage" />
 
-
-    <div id="flexslider-{uid}" class="flexslider <f:if condition="{0:settings.carousel} == {0:'true'}">carousel</f:if>">
+    <div id="flexslider-{uid}" class="flexslider {f:if(condition:settings.templateLayout,then:'layout-{settings.templateLayout}')} {f:if(condition:'{settings.carousel} == \'true\'',then:'carousel')}">
         <ul class="slides">
             <f:for each="{images}" as="item">
                 <f:render partial="Entry" section="Entry" arguments="{item: item, settings: settings}" />
