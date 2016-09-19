@@ -13,31 +13,35 @@ namespace WapplerSystems\WsFlexslider\Controller;
  *
  * The TYPO3 project - inspiring people to share!
  */
+use WapplerSystems\WsFlexslider\Domain\Model\Content;
 
 /**
- *
- *
  * @package ws_flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
-
     /**
      * @var \WapplerSystems\WsFlexslider\Domain\Repository\ImageRepository
      * @inject
      */
     protected $imageRepository;
-
-
+    
+    /**
+     * @var \WapplerSystems\WsFlexslider\Domain\Repository\ContentRepository
+     * @inject
+     */
+    protected $contentRepository;
+    
+    /**
+     * initializes all Controller actions
+     *
+     * @return void
+     */
     public function initializeAction()
     {
-
         $this->configuration = $this->settings['flexslider'];
-
-
+        
         // Settings
 
         if (isset($this->settings['ff']['maxwidth']) && strlen($this->settings['ff']['maxwidth']) > 0) {
@@ -143,7 +147,6 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
         if (isset($this->settings['ff']['move']) && intval($this->settings['ff']['move']) > 0) {
             $this->settings['move'] = $this->settings['ff']['move'];
         }
-
     }
 
     /**
@@ -153,24 +156,34 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
      */
     public function listAction()
     {
-
-        $FeConfigManager = $this->objectManager->get('TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager');
-        $ts = $FeConfigManager->getTypoScriptSetup();
+        $feConfigManager = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\FrontendConfigurationManager');
+        $ts = $feConfigManager->getTypoScriptSetup();
 
         // Check Static include
         if (!isset($ts['plugin.']['tx_wsflexslider.']['view.']['templateRootPaths.'])) {
             $this->addFlashMessage('You have to include the static extension Template of the Flexslider.',
                 'Missing template', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         }
+        
+        $contentObject = $this->getTranslatedContentObject();
 
-        $contentObject = $this->configurationManager->getContentObject();
-        $contentElement = $contentObject->data;
-
-        $contentuid = $contentElement['uid'];
-
-        $this->view->assign('uid', $contentuid);
+        $this->view->assign('uid', $contentObject->getUid());
         $this->view->assign('settings', $this->settings);
-        $this->view->assign('images', $this->imageRepository->findByContentUid($contentuid));
+        $this->view->assign('images', $this->imageRepository->findByContentUid($contentObject->getUid()));
+    }
+    
+    /**
+     * Get tt_content record as translated object
+     *
+     * @return Content
+     */
+    protected function getTranslatedContentObject()
+    {
+        $contentObjectRecord = $this->configurationManager->getContentObject()->data;
+        
+        /** @var Content $contentObject */
+        $contentObject = $this->contentRepository->findByIdentifier($contentObjectRecord['uid']);
+        return $contentObject;
     }
 
 }
