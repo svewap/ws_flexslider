@@ -20,7 +20,7 @@ page.includeCSS {
 plugin.tx_wsflexslider {
 
 	settings {
-	
+
 		maxwidth = {$plugin.tx_wsflexslider.maxwidth}
 		maxheight = {$plugin.tx_wsflexslider.maxheight}
 		animation = {$plugin.tx_wsflexslider.animation}
@@ -46,7 +46,7 @@ plugin.tx_wsflexslider {
 		multipleKeyboard = {$plugin.tx_wsflexslider.multipleKeyboard}
 		mousewheel = {$plugin.tx_wsflexslider.mousewheel}
 		pausePlay = {$plugin.tx_wsflexslider.pausePlay}
-		
+
 		controlsContainer = {$plugin.tx_wsflexslider.controlsContainer}
 		manualControls = {$plugin.tx_wsflexslider.manualControls}
 		sync = {$plugin.tx_wsflexslider.sync}
@@ -56,9 +56,9 @@ plugin.tx_wsflexslider {
 		minItems = {$plugin.tx_wsflexslider.minItems}
 		maxItems = {$plugin.tx_wsflexslider.maxItems}
 		move = {$plugin.tx_wsflexslider.move}
-		
+
 		carousel = {$plugin.tx_wsflexslider.carousel}
-		
+
 	}
 
 
@@ -80,10 +80,16 @@ plugin.tx_wsflexslider {
 	}
 	persistence {
 		storagePid = {$plugin.tx_wsflexslider.persistence.storagePid}
+		classes {
+			WapplerSystems\WsFlexslider\Domain\Model\Content {
+				mapping {
+					tableName = tt_content
+				}
+			}
+		}
 	}
 	features {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
 	}
 }
-
