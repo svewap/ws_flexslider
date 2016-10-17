@@ -174,18 +174,15 @@ $TCA['tx_wsflexslider_domain_model_image'] = array(
                 'wizards' => array(
                     'link' => array(
                         'type' => 'popup',
-                        'title' => 'LLL:EXT:cms/locallang_ttc.xml:image_link_formlabel',
-                        'icon' => 'link_popup.gif',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                        'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
                         'module' => array(
-                            'name' => 'wizard_element_browser',
-                            'urlParameters' => array(
-                                'mode' => 'wizard'
-                            )
+                            'name' => 'wizard_link',
                         ),
-                        'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+                        'JSopenParams' => 'height=600,width=500,status=0,menubar=0,scrollbars=1'
                     ),
                 ),
-                'softref' => 'typolink[linkList]',
+                'softref' => 'typolink,typolink_tag,images,url',
             ),
         ),
         'fal_image' => array(
