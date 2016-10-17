@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3locallang>
-	<meta type="array">
-		<type>database</type>
-		<description>Language labels for database tables/fields belonging to extension 'ws_flexslider'</description>
-	</meta>
-	<data type="array">
-		<languageKey index="default" type="array">
-			<label index="tx_wsflexslider_domain_model_flexslider">Flexslider</label>
-			<label index="tx_wsflexslider_domain_model_flexslider.images">Images</label>
-			<label index="tx_wsflexslider_domain_model_image">Image</label>
-			<label index="tx_wsflexslider_domain_model_image.title">Title</label>
-			<label index="tx_wsflexslider_domain_model_image.description">Description</label>
-			<label index="tx_wsflexslider_domain_model_image.image">Image</label>
-			<label index="tx_wsflexslider_domain_model_image.link">Link</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition">Text position</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition_left">Left</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition_right">Right</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass">Text style class</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style1">Style 1</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style2">Style 2</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style3">Style 3</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style4">Style 4</label>
-		</languageKey>
-		<languageKey index="de" type="array">
-			<label index="images">Bilder</label>
-			<label index="tx_wsflexslider_domain_model_flexslider">Flexslider</label>
-			<label index="tx_wsflexslider_domain_model_flexslider.images">Bilder</label>
-			<label index="tx_wsflexslider_domain_model_image">Bild</label>
-			<label index="tx_wsflexslider_domain_model_image.title">Titel</label>
-			<label index="tx_wsflexslider_domain_model_image.description">Beschreibung</label>
-			<label index="tx_wsflexslider_domain_model_image.image">Bild</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition">Textposition</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition_left">Links</label>
-			<label index="tx_wsflexslider_domain_model_image.textposition_right">Rechts</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass">Text Stilklasse</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style1">Stil 1</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style2">Stil 2</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style3">Stil 3</label>
-			<label index="tx_wsflexslider_domain_model_image.styleclass_style4">Stil 4</label>
-		</languageKey>
-	</data>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'ws_flexslider'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tx_wsflexslider_domain_model_flexslider">Flexslider</label>
+            <label index="tx_wsflexslider_domain_model_flexslider.images">Images</label>
+            <label index="tx_wsflexslider_domain_model_image">Image</label>
+            <label index="tx_wsflexslider_domain_model_image.title">Title</label>
+            <label index="tx_wsflexslider_domain_model_image.description">Description</label>
+            <label index="tx_wsflexslider_domain_model_image.image">Image</label>
+            <label index="tx_wsflexslider_domain_model_image.link">Link</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition">Text position</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition_left">Left</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition_right">Right</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass">Text style class</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style1">Style 1</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style2">Style 2</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style3">Style 3</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style4">Style 4</label>
+            <label index="pi1_title">Flexslider</label>
+            <label index="pi1_plus_wiz_description">Inserts a Flexslider element</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="images">Bilder</label>
+            <label index="tx_wsflexslider_domain_model_flexslider">Flexslider</label>
+            <label index="tx_wsflexslider_domain_model_flexslider.images">Bilder</label>
+            <label index="tx_wsflexslider_domain_model_image">Bild</label>
+            <label index="tx_wsflexslider_domain_model_image.title">Titel</label>
+            <label index="tx_wsflexslider_domain_model_image.description">Beschreibung</label>
+            <label index="tx_wsflexslider_domain_model_image.image">Bild</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition">Textposition</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition_left">Links</label>
+            <label index="tx_wsflexslider_domain_model_image.textposition_right">Rechts</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass">Text Stilklasse</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style1">Stil 1</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style2">Stil 2</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style3">Stil 3</label>
+            <label index="tx_wsflexslider_domain_model_image.styleclass_style4">Stil 4</label>
+            <label index="pi1_plus_wiz_description">Füg ein Flexslider Element ein</label>
+        </languageKey>
+    </data>
 </T3locallang>

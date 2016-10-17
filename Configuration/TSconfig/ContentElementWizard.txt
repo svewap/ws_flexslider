@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+	elements {
+		wsflexslider {
+			iconIdentifier = ext-wsflexslider-wizard-icon
+			title = LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:pi1_title
+			description = LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:pi1_plus_wiz_description
+			tt_content_defValues {
+				CType = list
+				list_type = wsflexslider_pi1
+			}
+		}
+	}
+}
