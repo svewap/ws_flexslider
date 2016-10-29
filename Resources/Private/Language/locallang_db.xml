@@ -40,7 +40,7 @@
             <label index="tx_wsflexslider_domain_model_image.styleclass_style2">Stil 2</label>
             <label index="tx_wsflexslider_domain_model_image.styleclass_style3">Stil 3</label>
             <label index="tx_wsflexslider_domain_model_image.styleclass_style4">Stil 4</label>
-            <label index="pi1_plus_wiz_description">Füg ein Flexslider Element ein</label>
+            <label index="pi1_plus_wiz_description">Fügt ein Flexslider Element ein</label>
         </languageKey>
     </data>
 </T3locallang>
