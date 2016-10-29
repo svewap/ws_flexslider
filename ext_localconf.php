@@ -8,7 +8,6 @@ if (!defined('TYPO3_MODE')) {
 	'Pi1',
 	array(
 		'Flexslider' => 'list',
-		
 	),
 	// non-cacheable actions
 	array(
@@ -22,6 +21,7 @@ if (!defined('TYPO3_MODE')) {
 if (TYPO3_MODE === 'BE') {
     $icons = [
         'ext-wsflexslider-wizard-icon' => 'plugin_wizard.png',
+        'ext-wsflexslider-image' => 'picture.png',
     ];
     $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
     foreach ($icons as $identifier => $path) {

@@ -3,8 +3,32 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
-$TCA['tx_wsflexslider_domain_model_image'] = array(
-    'ctrl' => $TCA['tx_wsflexslider_domain_model_image']['ctrl'],
+return array(
+    'ctrl' => array(
+        'title'	=> 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image',
+        'label' => 'title',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'dividers2tabs' => TRUE,
+        'sortby' => 'sorting',
+        'versioningWS' => 2,
+        'versioning_followPages' => TRUE,
+        'origUid' => 't3_origuid',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'delete' => 'deleted',
+        'enablecolumns' => array(
+            'disabled' => 'hidden',
+            'starttime' => 'starttime',
+            'endtime' => 'endtime',
+        ),
+        'searchFields' => 'title,description,',
+        'typeicon_classes' => [
+            'default' => 'ext-wsflexslider-image'
+        ],
+    ),
     'interface' => array(
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, fal_image',
     ),
