@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-06-02T11:47:26Z" product-name="ws_flexslider">
+		<header/>
+		<body>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>flexslider item record</source>
+			</trans-unit>
+			<trans-unit id="sys_language_uid.description" xml:space="preserve">
+				<source>Language of the flexslider item</source>
+			</trans-unit>
+			<trans-unit id="hidden.description" xml:space="preserve">
+				<source>Hidden items are never shown in the frontend.</source>
+			</trans-unit>
+			<trans-unit id="title.description" xml:space="preserve">
+				<source>Title of the item</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
