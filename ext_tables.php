@@ -33,8 +33,6 @@ call_user_func(
             'FILE:EXT:' . $extKey . '/Configuration/FlexForm/Flexslider.xml');
 
 
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extKey, 'Pi1', 'Flexslider');
-
     },
     'ws_flexslider'
 );
