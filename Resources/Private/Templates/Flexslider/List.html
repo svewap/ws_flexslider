@@ -18,7 +18,7 @@
 
     <prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
 
-    jQuery(window).load(function() {
+    jQuery(window).on('load',function() {
         jQuery('#flexslider-<f:format.raw value="{uid}" />').flexslider({
             animation: "<f:format.raw value="{settings.animation}" />",
             animationLoop: {settings.animationLoop},
