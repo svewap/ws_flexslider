@@ -78,18 +78,5 @@ plugin.tx_wsflexslider {
 			1 = {$plugin.tx_wsflexslider.view.layoutRootPath}
 		}
 	}
-	persistence {
-		storagePid = {$plugin.tx_wsflexslider.persistence.storagePid}
-		classes {
-			WapplerSystems\WsFlexslider\Domain\Model\Content {
-				mapping {
-					tableName = tt_content
-				}
-			}
-		}
-	}
-	features {
-		# uncomment the following line to enable the new Property Mapper.
-		# rewrittenPropertyMapper = 1
-	}
+
 }

@@ -1,0 +1,11 @@
+
+config.tx_extbase.persistence.classes {
+
+
+    WapplerSystems\WsFlexslider\Domain\Model\Content {
+        mapping {
+            tableName = tt_content
+        }
+    }
+
+}

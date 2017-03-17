@@ -19,7 +19,7 @@ if (!defined('TYPO3_MODE')) {
                 #'collapseAll' => 0, // Auskommentieren, da es sonst immer als true interpretiert wird
                 'expandSingle' => true,
                 'newRecordLinkAddTitle' => 1,
-                'newRecordLinkPosition' => "both",
+                'newRecordLinkPosition' => 'both',
                 'showAllLocalizationLink' => true,
                 'showPossibleLocalizationRecords' => true,
             ),
