@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="address2">
+		<header/>
+		<body>
+
+			<trans-unit id="images" xml:space="preserve">
+				<source>Images</source>
+			</trans-unit>
+
+			<trans-unit id="tx_wsflexslider_domain_model_flexslider" xml:space="preserve">
+				<source>Flexslider</source>
+			</trans-unit>
+			<trans-unit id="tx_wsflexslider_domain_model_flexslider.images" xml:space="preserve">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_wsflexslider_domain_model_image" xml:space="preserve">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="tx_wsflexslider_domain_model_image.title" xml:space="preserve">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="tx_wsflexslider_domain_model_image.description" xml:space="preserve">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="tx_wsflexslider_domain_model_image.image" xml:space="preserve">
+				<source>image</source>
+			</trans-unit>
+
+			<trans-unit id="list_title" xml:space="preserve">
+				<source>Flexslider</source>
+			</trans-unit>
+			<trans-unit id="add_image" xml:space="preserve">
+				<source>Add image</source>
+			</trans-unit>
+
+			<trans-unit id="ff.config" xml:space="preserve">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="ff.maxwidth" xml:space="preserve">
+				<source>Max width</source>
+			</trans-unit>
+			<trans-unit id="ff.maxheight" xml:space="preserve">
+				<source>Max height</source>
+			</trans-unit>
+			<trans-unit id="ff.typoscript" xml:space="preserve">
+				<source>TypoScript</source>
+			</trans-unit>
+			<trans-unit id="ff.fade" xml:space="preserve">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="ff.slide" xml:space="preserve">
+				<source>Slide</source>
+			</trans-unit>
+			<trans-unit id="ff.animation" xml:space="preserve">
+				<source>Animation</source>
+			</trans-unit>
+			<trans-unit id="ff.easing" xml:space="preserve">
+				<source>Easing effect</source>
+			</trans-unit>
+			<trans-unit id="ff.direction" xml:space="preserve">
+				<source>Direction</source>
+			</trans-unit>
+			<trans-unit id="ff.vertical" xml:space="preserve">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="ff.horizontal" xml:space="preserve">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="ff.reverse" xml:space="preserve">
+				<source>Reverse order</source>
+			</trans-unit>
+			<trans-unit id="ff.yes" xml:space="preserve">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="ff.no" xml:space="preserve">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="ff.animationLoop" xml:space="preserve">
+				<source>Animation loop</source>
+			</trans-unit>
+			<trans-unit id="ff.smoothHeight" xml:space="preserve">
+				<source>Smooth height</source>
+			</trans-unit>
+			<trans-unit id="ff.startAt" xml:space="preserve">
+				<source>Start at</source>
+			</trans-unit>
+			<trans-unit id="ff.slideshow" xml:space="preserve">
+				<source>Slideshow mode</source>
+			</trans-unit>
+			<trans-unit id="ff.slideshowSpeed" xml:space="preserve">
+				<source>Slideshow speed (in milliseconds)</source>
+			</trans-unit>
+			<trans-unit id="ff.animationSpeed" xml:space="preserve">
+				<source>Animation speed (in milliseconds)</source>
+			</trans-unit>
+			<trans-unit id="ff.initDelay" xml:space="preserve">
+				<source>Init delay in milliseconds</source>
+			</trans-unit>
+			<trans-unit id="ff.randomize" xml:space="preserve">
+				<source>Random mode</source>
+			</trans-unit>
+			<trans-unit id="ff.textmode" xml:space="preserve">
+				<source>Text mode</source>
+			</trans-unit>
+			<trans-unit id="ff.primarysettings" xml:space="preserve">
+				<source>Primary Settings</source>
+			</trans-unit>
+			<trans-unit id="templateLayout" xml:space="preserve">
+				<source>Template Layout</source>
+			</trans-unit>
+
+			<!-- Usability Features -->
+			<trans-unit id="ff.primarycontrols" xml:space="preserve">
+				<source>Primary controls</source>
+			</trans-unit>
+			<trans-unit id="ff.pauseOnAction" xml:space="preserve">
+				<source>Pause on action</source>
+			</trans-unit>
+			<trans-unit id="ff.pauseOnHover" xml:space="preserve">
+				<source>Pause on hover</source>
+			</trans-unit>
+			<trans-unit id="ff.useCSS" xml:space="preserve">
+				<source>User CSS</source>
+			</trans-unit>
+			<trans-unit id="ff.touch" xml:space="preserve">
+				<source>Touch mode</source>
+			</trans-unit>
+			<trans-unit id="ff.video" xml:space="preserve">
+				<source>Video mode</source>
+			</trans-unit>
+
+			<!-- Primary Controls -->
+			<trans-unit id="ff.controlNav" xml:space="preserve">
+				<source>Control navigation on</source>
+			</trans-unit>
+			<trans-unit id="ff.directionNav" xml:space="preserve">
+				<source>Direction navigation on</source>
+			</trans-unit>
+
+			<!-- Secondary Navigation -->
+			<trans-unit id="ff.secondarynavigation" xml:space="preserve">
+				<source>Secondary navigation</source>
+			</trans-unit>
+			<trans-unit id="ff.keyboard" xml:space="preserve">
+				<source>Keyboard support</source>
+			</trans-unit>
+			<trans-unit id="ff.multipleKeyboard" xml:space="preserve">
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+			</trans-unit>
+			<trans-unit id="ff.mousewheel" xml:space="preserve">
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+			</trans-unit>
+			<trans-unit id="ff.pausePlay" xml:space="preserve">
+				<source>Create pause/play dynamic element</source>
+			</trans-unit>
+
+			<!-- Special Properties -->
+			<trans-unit id="ff.specialproperties" xml:space="preserve">
+				<source>Special properties</source>
+			</trans-unit>
+			<trans-unit id="ff.controlsContainer" xml:space="preserve">
+				<source>controlsContainer jQuery object/selector</source>
+			</trans-unit>
+			<trans-unit id="ff.manualControls" xml:space="preserve">
+				<source>manualControls jQuery object/selector</source>
+			</trans-unit>
+			<trans-unit id="ff.sync" xml:space="preserve">
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+			</trans-unit>
+			<trans-unit id="ff.asNavFor" xml:space="preserve">
+				<source>asNavFor selector</source>
+			</trans-unit>
+
+			<!-- Carousel-->
+			<trans-unit id="ff.carousel" xml:space="preserve">
+				<source>Carousel options</source>
+			</trans-unit>
+			<trans-unit id="ff.itemWidth" xml:space="preserve">
+				<source>Element width in pixels</source>
+			</trans-unit>
+			<trans-unit id="ff.itemMargin" xml:space="preserve">
+				<source>Element border (margin)</source>
+			</trans-unit>
+			<trans-unit id="ff.minItems" xml:space="preserve">
+				<source>Min number of elements</source>
+			</trans-unit>
+			<trans-unit id="ff.maxItems" xml:space="preserve">
+				<source>Max number of elements</source>
+			</trans-unit>
+			<trans-unit id="ff.move" xml:space="preserve">
+				<source>Number of elements, which should be moved in animation</source>
+			</trans-unit>
+
+			<!-- Labels -->
+			<trans-unit id="pauseText" xml:space="preserve">
+				<source>Pause</source>
+			</trans-unit>
+			<trans-unit id="playText" xml:space="preserve">
+				<source>Play</source>
+			</trans-unit>
+			<trans-unit id="prevText" xml:space="preserve">
+				<source>Previous</source>
+			</trans-unit>
+			<trans-unit id="nextText" xml:space="preserve">
+				<source>Next</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="address2">
+        <header/>
+        <body>
+			
+            <trans-unit id="images" xml:space="preserve">
+				<target>Bilder</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_flexslider" xml:space="preserve">
+				<target>Flexslider</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_flexslider.images" xml:space="preserve">
+				<target>Bilder</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image" xml:space="preserve">
+				<target>Bild</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.title" xml:space="preserve">
+				<target>Titel</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.description" xml:space="preserve">
+				<target>Beschreibung</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.image" xml:space="preserve">
+				<target>Bild</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.textposition" xml:space="preserve">
+				<target>Textposition</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.textposition_left" xml:space="preserve">
+				<target>Links</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.textposition_right" xml:space="preserve">
+				<target>Rechts</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.styleclass" xml:space="preserve">
+				<target>Text Stilklasse</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.styleclass_style1" xml:space="preserve">
+				<target>Stil 1</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.styleclass_style2" xml:space="preserve">
+				<target>Stil 2</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.styleclass_style3" xml:space="preserve">
+				<target>Stil 3</target>
+			</trans-unit>
+            <trans-unit id="tx_wsflexslider_domain_model_image.styleclass_style4" xml:space="preserve">
+				<target>Stil 4</target>
+			</trans-unit>
+            <trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
+				<target>Fügt ein Flexslider Element ein</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
