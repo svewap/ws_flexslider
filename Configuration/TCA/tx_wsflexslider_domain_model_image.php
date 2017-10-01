@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 
 return array(
     'ctrl' => array(
-        'title'	=> 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image',
+        'title'	=> 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -126,7 +126,7 @@ return array(
         ),
         'title' => array(
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.title',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.title',
             'config' => array(
                 'type' => 'input',
                 'size' => 30,
@@ -137,7 +137,7 @@ return array(
             'l10n_mode' => 'prefixLangTitle',
             'l10n_cat' => 'text',
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.description',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.description',
             'config' => array(
                 'type' => 'text',
                 'cols' => 40,
@@ -148,17 +148,17 @@ return array(
         ),
         'textposition' => array(
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.textposition',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.textposition',
             'config' => array(
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => array(
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.textposition_left',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.textposition_left',
                         "left"
                     ),
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.textposition_right',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.textposition_right',
                         "right"
                     )
                 ),
@@ -166,25 +166,25 @@ return array(
         ),
         'styleclass' => array(
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.styleclass',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.styleclass',
             'config' => array(
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => array(
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.styleclass_style1',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.styleclass_style1',
                         "style1"
                     ),
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.styleclass_style2',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.styleclass_style2',
                         "style2"
                     ),
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.styleclass_style3',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.styleclass_style3',
                         "style3"
                     ),
                     array(
-                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.styleclass_style4',
+                        'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.styleclass_style4',
                         "style4"
                     )
                 ),
@@ -192,7 +192,7 @@ return array(
         ),
         'link' => array(
             'exclude' => 1,
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.link',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.link',
             'config' => array(
                 'type' => 'input',
                 'wizards' => array(
@@ -212,7 +212,7 @@ return array(
         'fal_image' => array(
             'exclude' => 0,
             'l10n_mode' => 'mergeIfNotBlank',
-            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xml:tx_wsflexslider_domain_model_image.image',
+            'label' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image.image',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'fal_image',
                 array(
