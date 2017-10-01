@@ -10,8 +10,8 @@
 
     <div id="flexslider-{uid}" class="flexslider {f:if(condition:settings.templateLayout,then:'layout-{settings.templateLayout}')} {f:if(condition:'{settings.carousel} == \'true\'',then:'carousel')}">
         <ul class="slides">
-            <f:for each="{images}" as="item">
-                <f:render partial="Entry" section="Entry" arguments="{item: item, settings: settings}" />
+            <f:for each="{images}" as="item" iteration="iterator">
+                <f:render partial="Entry" section="Entry" arguments="{item: item, settings: settings, iterator:iterator}" />
             </f:for>
         </ul>
     </div>
