@@ -55,6 +55,9 @@
             <trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
 				<source>Inserts a Flexslider element</source>
 			</trans-unit>
+			<trans-unit id="add_image" xml:space="preserve">
+				<source>Add image</source>
+			</trans-unit>
         </body>
     </file>
 </xliff>

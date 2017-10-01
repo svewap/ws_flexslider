@@ -30,9 +30,7 @@
 			<trans-unit id="list_title" xml:space="preserve">
 				<target>Flexslider</target>
 			</trans-unit>
-			<trans-unit id="add_image" xml:space="preserve">
-				<target>Bild hinzufügen</target>
-			</trans-unit>
+
 
 			<trans-unit id="ff.config" xml:space="preserve">
 				<target>Konfiguration</target>

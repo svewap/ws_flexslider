@@ -219,25 +219,27 @@ return array(
                     'minitems' => 0,
                     'maxitems' => 1,
                     'appearance' => array(
-                        'createNewRelationLinkTitle' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang.xml:add_image',
+                        'createNewRelationLinkTitle' => 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:add_image',
                         'showAllLocalizationLink' => 1,
+                        'headerThumbnail' => [
+                            'height' => '90c',
+                            'width' => 90
+                        ]
                     ),
                     'foreign_match_fields' => array(
                         'fieldname' => 'fal_image',
                         'tablenames' => 'tx_wsflexslider_domain_model_image',
                         'table_local' => 'sys_file',
                     ),
-                    // custom configuration for displaying fields in the overlay/reference table
-                    // to use the newsPalette and imageoverlayPalette instead of the basicoverlayPalette
-                    'foreign_types' => array(
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => array(
-                            'showitem' => '
-								--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;newsPalette,
-								--palette--;;imageoverlayPalette,
-								--palette--;;filePalette'
-                        ),
-
-                    )
+                    'overrideChildTca' => [
+                        'types' => [
+                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                                'showitem' => '
+                                            crop,
+                                            --palette--;;filePalette'
+                            ],
+                        ],
+                    ],
                 ),
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             )
