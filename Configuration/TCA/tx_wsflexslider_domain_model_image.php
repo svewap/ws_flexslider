@@ -12,8 +12,6 @@ return [
         'cruser_id' => 'cruser_id',
         'dividers2tabs' => TRUE,
         'sortby' => 'sorting',
-        'versioningWS' => 2,
-        'versioning_followPages' => TRUE,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -34,8 +32,8 @@ return [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'hidden;;1, title, sys_language_uid,
-				description;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel;;richtext:rte_transform[flag=rte_enabled|mode=ts_css], 
+            'showitem' => 'hidden, title, sys_language_uid,
+				description,
 				textposition, styleclass, link, fal_image,
 		
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
@@ -65,6 +63,7 @@ return [
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
+                'renderType' => 'selectSingle',
                 'items' => [
                     ['', 0],
                 ],
@@ -93,36 +92,27 @@ return [
             ],
         ],
         'starttime' => [
-            'exclude' => 1,
-            'l10n_mode' => 'mergeIfNotBlank',
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+            'exclude' => true,
             'config' => [
                 'type' => 'input',
-                'size' => 13,
-                'max' => 20,
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'checkbox' => 0,
-                'default' => 0,
-                'range' => [
-                    'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ],
-            ],
+                'default' => 0
+            ]
         ],
         'endtime' => [
-            'exclude' => 1,
-            'l10n_mode' => 'mergeIfNotBlank',
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+            'exclude' => true,
             'config' => [
                 'type' => 'input',
-                'size' => 13,
-                'max' => 20,
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'checkbox' => 0,
                 'default' => 0,
                 'range' => [
-                    'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ],
-            ],
+                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
+                ]
+            ]
         ],
         'title' => [
             'exclude' => 0,
@@ -142,9 +132,8 @@ return [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 6,
-                'softref' => 'typolink_tag,images,email[subst],url',
+                'enableRichtext' => true,
             ],
-            'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]'
         ],
         'textposition' => [
             'exclude' => 0,
@@ -199,7 +188,7 @@ return [
                     'link' => [
                         'type' => 'popup',
                         'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                        'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+                        'icon' => 'actions-wizard-link',
                         'module' => [
                             'name' => 'wizard_link',
                         ],
@@ -263,6 +252,7 @@ return [
             'label' => 'CC',
             'config' => [
                 'type' => 'select',
+                'renderType' => 'selectSingle',
                 'foreign_table' => 'tt_content',
                 //'foreign_table_where' => ...,
                 'size' => 1,

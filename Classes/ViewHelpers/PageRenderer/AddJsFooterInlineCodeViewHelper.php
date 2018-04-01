@@ -16,6 +16,8 @@ namespace WapplerSystems\WsFlexslider\ViewHelpers\PageRenderer;
 
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 /**
  *
@@ -24,7 +26,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @author Sven Wappler <typo3YYYY@wapplersystems.de>
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
+class AddJsFooterInlineCodeViewHelper extends AbstractTagBasedViewHelper {
 
 
 	/**
@@ -69,7 +71,7 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
 	 */
 	protected function isCached() {
 		$userObjType = $this->configurationManager->getContentObject()->getUserObjectType();
-		return ($userObjType !== \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::OBJECTTYPE_USER_INT);
+		return ($userObjType !== ContentObjectRenderer::OBJECTTYPE_USER_INT);
 	}
 	
 	

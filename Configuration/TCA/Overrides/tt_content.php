@@ -25,7 +25,6 @@ if (!defined('TYPO3_MODE')) {
             ],
             'behaviour' => [
                 'localizationMode' => 'select',
-                'localizeChildrenAtParentLocalization' => true,
             ],
         ]
     ],
