@@ -11,12 +11,14 @@
 
             </f:if>
             <div class="caption-wrapper caption-align-{item.textposition}">
+                <f:if condition="{item.title}||{item.description}">
                 <div class="caption-text">
                     <p class="caption-title">{item.title}</p>
                     <f:if condition="{item.description}">
                         <div class="caption-body"><f:format.html>{item.description}</f:format.html></div>
                     </f:if>
                 </div>
+                </f:if>
                 <f:if condition="{item.link}">
                     <div class="caption-link">
                         <f:link.typolink parameter="{item.link}"><f:translate key="more">More</f:translate></f:link.typolink>
