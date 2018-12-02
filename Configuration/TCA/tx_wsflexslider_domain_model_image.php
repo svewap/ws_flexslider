@@ -3,6 +3,11 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
+$llc = 'EXT:lang/locallang_tca.xlf';
+if (version_compare(TYPO3_version, '9.0.0') >= 0) {
+    $llc = 'EXT:core/Resources/Private/Language/locallang_tca.xlf';
+}
+
 return [
     'ctrl' => [
         'title'	=> 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image',
@@ -223,23 +228,23 @@ return [
                     'foreign_types' => [
                         '0' => [
                             'showitem' => '
-						--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-						--palette--;;imageoverlayPalette,
-						--palette--;;filePalette'
+                                --palette--;LLL:'.$llc.':sys_file_reference.imageoverlayPalette,
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
                         ],
                         \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                             'showitem' => '
-						--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-						--palette--;;imageoverlayPalette,
-						--palette--;;filePalette'
+                                --palette--;LLL:'.$llc.':sys_file_reference.imageoverlayPalette,
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
                         ],
                     ],
                     'overrideChildTca' => [
                         'types' => [
                             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                                 'showitem' => '
-                                            crop,
-                                            --palette--;;filePalette'
+                                    crop,
+                                    --palette--;;filePalette'
                             ],
                         ],
                     ],
