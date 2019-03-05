@@ -3,11 +3,6 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
-$llc = 'EXT:lang/locallang_tca.xlf';
-if (version_compare(TYPO3_version, '9.0.0') >= 0) {
-    $llc = 'EXT:core/Resources/Private/Language/locallang_tca.xlf';
-}
-
 return [
     'ctrl' => [
         'title'	=> 'LLL:EXT:ws_flexslider/Resources/Private/Language/locallang_db.xlf:tx_wsflexslider_domain_model_image',
@@ -49,32 +44,39 @@ return [
     ],
     'columns' => [
         'sys_language_uid' => [
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
+            'exclude' => true,
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'sys_language',
-                'foreign_table_where' => 'ORDER BY sys_language.title',
+                'special' => 'languages',
                 'items' => [
-                    ['LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1],
-                    ['LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0]
+                    [
+                        'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                        -1,
+                        'flags-multiple'
+                    ],
                 ],
-            ],
+                'default' => 0,
+            ]
         ],
-        'l10n_parent' => [
+        'l18n_parent' => [
+            'exclude' => true,
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['', 0],
+                    [
+                        '',
+                        0
+                    ]
                 ],
                 'foreign_table' => 'tx_wsflexslider_domain_model_image',
                 'foreign_table_where' => 'AND tx_wsflexslider_domain_model_image.pid=###CURRENT_PID### AND tx_wsflexslider_domain_model_image.sys_language_uid IN (-1,0)',
-            ],
+                'default' => 0
+            ]
         ],
         'l10n_diffsource' => [
             'config' => [
@@ -228,13 +230,13 @@ return [
                     'foreign_types' => [
                         '0' => [
                             'showitem' => '
-                                --palette--;LLL:'.$llc.':sys_file_reference.imageoverlayPalette,
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
                                 --palette--;;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
                         \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                             'showitem' => '
-                                --palette--;LLL:'.$llc.':sys_file_reference.imageoverlayPalette,
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
                                 --palette--;;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
@@ -268,4 +270,3 @@ return [
     ],
 ];
 
-?>
