@@ -60,7 +60,7 @@ return [
                 'default' => 0,
             ]
         ],
-        'l18n_parent' => [
+        'l10n_parent' => [
             'exclude' => true,
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
