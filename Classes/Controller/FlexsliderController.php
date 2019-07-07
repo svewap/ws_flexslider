@@ -13,13 +13,17 @@ namespace WapplerSystems\WsFlexslider\Controller;
  *
  * The TYPO3 project - inspiring people to share!
  */
+
+use TYPO3\CMS\Core\Messaging\AbstractMessage;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use WapplerSystems\WsFlexslider\Domain\Model\Content;
+use TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager;
 
 /**
  * @package ws_flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class FlexsliderController extends ActionController
 {
     /**
      * @var \WapplerSystems\WsFlexslider\Domain\Repository\ImageRepository
@@ -157,13 +161,13 @@ class FlexsliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
      */
     public function listAction()
     {
-        $feConfigManager = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\FrontendConfigurationManager');
+        $feConfigManager = $this->objectManager->get(FrontendConfigurationManager::class);
         $ts = $feConfigManager->getTypoScriptSetup();
 
         // Check Static include
         if (!isset($ts['plugin.']['tx_wsflexslider.']['view.']['templateRootPaths.'])) {
             $this->addFlashMessage('You have to include the static extension Template of the Flexslider.',
-                'Missing template', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
+                'Missing template', AbstractMessage::ERROR);
         }
         
         $contentObject = $this->getTranslatedContentObject();
