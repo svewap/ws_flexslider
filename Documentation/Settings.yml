@@ -4,10 +4,10 @@
 
 ---
 conf.py:
-  copyright: 2014
+  copyright: 2014-2019
   project: Flexslider for TYPO3
   version: 1
-  release: 1.5.10
+  release: 1.5.11
   language: en
   latex_elements:
     papersize: a4paper
@@ -35,4 +35,7 @@ conf.py:
     - t3sphinx.ext.t3tablerows
     - t3sphinx.ext.targets
     - sphinx.ext.extlinks
+  html_theme_options:
+    github_repository: svewap/ws_flexslider
+    github_branch: master
 ...
