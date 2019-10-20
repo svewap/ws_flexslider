@@ -16,10 +16,10 @@
         </ul>
     </div>
 
-    <prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}" >
+    <prod:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}">
 
-    jQuery(document).ready(function() {
-        jQuery('#flexslider-<f:format.raw value="{uid}" />').flexslider({
+    jQuery(document).ready(function() <f:format.raw>{</f:format.raw>
+        jQuery('#flexslider-<f:format.raw value="{uid}" />').flexslider(<f:format.raw>{</f:format.raw>
             animation: "<f:format.raw value="{settings.animation}" />",
             animationLoop: {settings.animationLoop},
             itemMargin: "{settings.itemMargin}",
@@ -64,7 +64,7 @@
             move: {settings.move},
 
             carousel: {settings.carousel},
-            start: function(slider){
+            start: function(slider)<f:format.raw>{</f:format.raw>
                 jQuery('body').removeClass('loading');
             }
         });
