@@ -33,7 +33,6 @@ CREATE TABLE tx_wsflexslider_domain_model_image (
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
-	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 	KEY language (l10n_parent,sys_language_uid)
 
 );
