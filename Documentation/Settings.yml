@@ -7,7 +7,7 @@ conf.py:
   copyright: 2014-2019
   project: Flexslider for TYPO3
   version: 1
-  release: 1.5.11
+  release: 1.5.12
   language: en
   latex_elements:
     papersize: a4paper
