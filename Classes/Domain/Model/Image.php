@@ -13,8 +13,9 @@ namespace WapplerSystems\WsFlexslider\Domain\Model;
  *
  * The TYPO3 project - inspiring people to share!
  */
-    
-    
+
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+
 /**
  *
  *
@@ -59,7 +60,7 @@ class Image extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * textposition
      *
      * @var string
-     * @validate NotEmpty
+     * @Extbase\Validate("NotEmpty")
      */
     protected $textposition;
 
@@ -67,7 +68,7 @@ class Image extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * styleclass
      *
      * @var string
-     * @validate NotEmpty
+     * @Extbase\Validate("NotEmpty")
      */
     protected $styleclass;
 

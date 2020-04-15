@@ -27,13 +27,13 @@ class FlexsliderController extends ActionController
 {
     /**
      * @var \WapplerSystems\WsFlexslider\Domain\Repository\ImageRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $imageRepository;
     
     /**
      * @var \WapplerSystems\WsFlexslider\Domain\Repository\ContentRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $contentRepository;
     
