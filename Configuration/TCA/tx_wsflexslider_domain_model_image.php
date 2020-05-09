@@ -45,7 +45,7 @@ return [
     'columns' => [
         'sys_language_uid' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -84,7 +84,7 @@ return [
             ],
         ],
         't3ver_label' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
+            'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.versionLabel',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -92,33 +92,39 @@ return [
             ]
         ],
         'hidden' => [
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.enabled',
+            'exclude' => true,
             'config' => [
                 'type' => 'check',
-            ],
+                'renderType' => 'checkboxToggle',
+                'default' => 0,
+                'items' => [
+                    [
+                        0 => '',
+                        1 => '',
+                        'invertStateDisplay' => true
+                    ]
+                ],
+            ]
         ],
         'starttime' => [
-            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'exclude' => true,
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
+                'eval' => 'datetime,int',
                 'default' => 0
             ]
         ],
         'endtime' => [
-            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'exclude' => true,
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
-                'default' => 0,
-                'range' => [
-                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
-                ]
+                'eval' => 'datetime,int',
+                'default' => 0
             ]
         ],
         'title' => [
