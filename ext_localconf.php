@@ -10,11 +10,11 @@ call_user_func(
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'WapplerSystems.' . $extKey,
             'Pi1',
-            array(
+            [
                 'Flexslider' => 'list',
-            ),
+            ],
             // non-cacheable actions
-            array()
+            []
         );
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ws_flexslider/Configuration/TSconfig/ContentElementWizard.txt">');
