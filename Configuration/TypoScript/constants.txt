@@ -1,121 +1,121 @@
 plugin.tx_wsflexslider {
 
-	# cat=plugin.tx_wsflexslider; type=boolean; label=Include jQuery core: Incluse jQuery core script
-	includejquerycore = 
+    # cat=plugin.tx_wsflexslider; type=boolean; label=Include jQuery core: Incluse jQuery core script
+    includejquerycore =
 
-	# cat=plugin.tx_wsflexslider; type=string; label=Max width: Maximum width of the image file. The image is shown as large as possible
-	maxwidth = 800
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=Max height: Maximum height of the image file. The image is shown as large as possible
-	maxheight = 
-	
-	# cat=plugin.tx_wsflexslider; type=options[slide,fade]; label=Animation type
-	animation=fade
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=Easing: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported
-	easing=swing
-	
-	# cat=plugin.tx_wsflexslider; type=options[vertical,horizontal]; label=sliding direction
-	direction=horizontal
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Reverse the animation direction
-	reverse=false
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Animation loop: Should the animation loop? If false, directionNav will received "disable" classes at either end
-	animationLoop=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Smooth height: Allow height of the slider to animate smoothly in horizontal mode
-	smoothHeight=false
-	
-	# cat=plugin.tx_wsflexslider; type=int+; label=Start at: The slide that the slider should start on. Array notation (0 = first slide)
-	startAt = 0
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Animate slider automatically
-	slideshow=true
-	
-	# cat=plugin.tx_wsflexslider; type=int+; label=Set the speed of the slideshow cycling, in milliseconds
-	slideshowSpeed = 7000
-	
-	# cat=plugin.tx_wsflexslider; type=int+; label=Set the speed of animations, in milliseconds
-	animationSpeed = 600
-	
-	# cat=plugin.tx_wsflexslider; type=int+; label=Set an initialization delay, in milliseconds
-	initDelay = 0
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Randomize slide order
-	randomize=false
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause on action:Pause the slideshow when interacting with control elements, highly recommended.
-	pauseOnAction=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause on hover:Pause the slideshow when hovering over slider, then resume when no longer hovering
-	pauseOnHover=false
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Use CSS3: Slider will use CSS3 transitions if available
-	useCSS=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Touch support: Allow touch swipe navigation of the slider on touch-enabled devices
-	touch=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Video support: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
-	video=false
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Control navigation:Create navigation for paging control of each slide? Note: Leave true for manualControls usage
-	controlNav=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Direction navigation:Create navigation for previous/next navigation? (true/false)
-	directionNav=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
-	keyboard=true
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
-	multipleKeyboard = false
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Mousewheel support
-	mousewheel = false
-		
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause play
-	pausePlay = false
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=Controls container:jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
-	controlsContainer=
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=Manual controls:jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
-	manualControls=
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=Sync:Selector: Mirror the actions performed on this slider with another slider. Use with care.
-	sync=
-	
-	# cat=plugin.tx_wsflexslider; type=string; label=As nav for:Selector: Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
-	asNavFor=
-	
-	# cat=plugin.tx_wsflexslider/; type=int+; label=Item width: Box-model width of individual carousel items, including horizontal borders and padding.
-	itemWidth=0
-	
-	# cat=plugin.tx_wsflexslider/; type=int+; label=Item margin: Margin between carousel items.
-	itemMargin=0
-	
-	# cat=plugin.tx_wsflexslider/; type=int+; label=Min items: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
-	minItems=0
-	
-	# cat=plugin.tx_wsflexslider/; type=int+; label=Max items: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
-	maxItems=0
-	
-	# cat=plugin.tx_wsflexslider/; type=int+; label=Move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
-	move=0
-	
-	# cat=plugin.tx_wsflexslider; type=options[true,false]; label=Is carousel
-	carousel=false
-	
+    # cat=plugin.tx_wsflexslider; type=string; label=Max width: Maximum width of the image file. The image is shown as large as possible
+    maxwidth = 800
 
-	view {
-		# cat=plugin.tx_wsflexslider/file; type=string; label=Path to template root (FE)
-		templateRootPath = EXT:ws_flexslider/Resources/Private/Templates/
-		# cat=plugin.tx_wsflexslider/file; type=string; label=Path to template partials (FE)
-		partialRootPath = EXT:ws_flexslider/Resources/Private/Partials/
-		# cat=plugin.tx_wsflexslider/file; type=string; label=Path to template layouts (FE)
-		layoutRootPath = EXT:ws_flexslider/Resources/Private/Layouts/
-	}
-	
+    # cat=plugin.tx_wsflexslider; type=string; label=Max height: Maximum height of the image file. The image is shown as large as possible
+    maxheight =
+
+    # cat=plugin.tx_wsflexslider; type=options[slide,fade]; label=Animation type
+    animation = fade
+
+    # cat=plugin.tx_wsflexslider; type=string; label=Easing: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported
+    easing = swing
+
+    # cat=plugin.tx_wsflexslider; type=options[vertical,horizontal]; label=sliding direction
+    direction = horizontal
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Reverse the animation direction
+    reverse = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Animation loop: Should the animation loop? If false, directionNav will received "disable" classes at either end
+    animationLoop = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Smooth height: Allow height of the slider to animate smoothly in horizontal mode
+    smoothHeight = false
+
+    # cat=plugin.tx_wsflexslider; type=int+; label=Start at: The slide that the slider should start on. Array notation (0 = first slide)
+    startAt = 0
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Animate slider automatically
+    slideshow = true
+
+    # cat=plugin.tx_wsflexslider; type=int+; label=Set the speed of the slideshow cycling, in milliseconds
+    slideshowSpeed = 7000
+
+    # cat=plugin.tx_wsflexslider; type=int+; label=Set the speed of animations, in milliseconds
+    animationSpeed = 600
+
+    # cat=plugin.tx_wsflexslider; type=int+; label=Set an initialization delay, in milliseconds
+    initDelay = 0
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Randomize slide order
+    randomize = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause on action:Pause the slideshow when interacting with control elements, highly recommended.
+    pauseOnAction = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause on hover:Pause the slideshow when hovering over slider, then resume when no longer hovering
+    pauseOnHover = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Use CSS3: Slider will use CSS3 transitions if available
+    useCSS = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Touch support: Allow touch swipe navigation of the slider on touch-enabled devices
+    touch = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Video support: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+    video = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Control navigation:Create navigation for paging control of each slide? Note: Leave true for manualControls usage
+    controlNav = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Direction navigation:Create navigation for previous/next navigation? (true/false)
+    directionNav = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
+    keyboard = true
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
+    multipleKeyboard = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Mousewheel support
+    mousewheel = false
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Pause play
+    pausePlay = false
+
+    # cat=plugin.tx_wsflexslider; type=string; label=Controls container:jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
+    controlsContainer =
+
+    # cat=plugin.tx_wsflexslider; type=string; label=Manual controls:jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+    manualControls =
+
+    # cat=plugin.tx_wsflexslider; type=string; label=Sync:Selector: Mirror the actions performed on this slider with another slider. Use with care.
+    sync =
+
+    # cat=plugin.tx_wsflexslider; type=string; label=As nav for:Selector: Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+    asNavFor =
+
+    # cat=plugin.tx_wsflexslider/; type=int+; label=Item width: Box-model width of individual carousel items, including horizontal borders and padding.
+    itemWidth = 0
+
+    # cat=plugin.tx_wsflexslider/; type=int+; label=Item margin: Margin between carousel items.
+    itemMargin = 0
+
+    # cat=plugin.tx_wsflexslider/; type=int+; label=Min items: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
+    minItems = 0
+
+    # cat=plugin.tx_wsflexslider/; type=int+; label=Max items: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
+    maxItems = 0
+
+    # cat=plugin.tx_wsflexslider/; type=int+; label=Move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
+    move = 0
+
+    # cat=plugin.tx_wsflexslider; type=options[true,false]; label=Is carousel
+    carousel = false
+
+
+    view {
+        # cat=plugin.tx_wsflexslider/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ws_flexslider/Resources/Private/Templates/
+        # cat=plugin.tx_wsflexslider/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ws_flexslider/Resources/Private/Partials/
+        # cat=plugin.tx_wsflexslider/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ws_flexslider/Resources/Private/Layouts/
+    }
+
 }
