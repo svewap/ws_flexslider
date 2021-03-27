@@ -26,5 +26,11 @@
 		"psr-4": {
 			"WapplerSystems\\WsFlexslider\\": "Classes/"
 		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"extension-key": "ws_flexslider"
+		}
 	}
 }
