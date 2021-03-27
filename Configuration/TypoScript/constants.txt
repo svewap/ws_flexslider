@@ -1,7 +1,7 @@
 plugin.tx_wsflexslider {
 
     # cat=plugin.tx_wsflexslider; type=boolean; label=Include jQuery core: Incluse jQuery core script
-    includejquerycore =
+    includejquerycore = 0
 
     # cat=plugin.tx_wsflexslider; type=string; label=Max width: Maximum width of the image file. The image is shown as large as possible
     maxwidth = 800
