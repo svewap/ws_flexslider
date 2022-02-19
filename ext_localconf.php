@@ -11,7 +11,7 @@ call_user_func(
             'WapplerSystems.' . $extKey,
             'Pi1',
             [
-                'Flexslider' => 'list',
+                WapplerSystems\WsFlexslider\Controller\FlexsliderController::class => 'list',
             ],
             // non-cacheable actions
             []
