@@ -20,11 +20,11 @@
 		"source": "https://github.com/svewap/ws_flexslider"
 	},
 	"require": {
-		"typo3/cms-core": "^9.5 || ^10.4"
+		"typo3/cms-core": "^9.5 || ^11.5"
 	},
 	"autoload": {
 		"psr-4": {
-			"WapplerSystems\\WsFlexslider\\": "Classes/"
+			"WapplerSystems\\WsFlexslider\\": "Classes"
 		}
 	},
 	"extra": {
